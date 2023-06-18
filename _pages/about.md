@@ -9,8 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   address: >
-    <p>Room 322-B</p>
-    <p>Building A</p>
+    <p>Room 322-B, Building A</p>
     <p>Jianchuan Rd, No. 930</p>
     <p>Minhang, Shanghai</p>
 
@@ -24,9 +23,13 @@ social: false  # includes social icons at the bottom of the page
 Hi, I am an Associate Professor at [Qing Yuan Research Institute](https://www.qingyuan.sjtu.edu.cn), Shanghai Jiao Tong University.
 
 Prior to SJTU, I spent two years in SenseBrain located in New Jersey, and one year in JD Group Silicon Valley Research Center.
-I obtained my Ph.D. degree of Computer Science from College of Computing and Informatics, [UNC Charlotte](https://www.charlotte.edu). 
 
-My research topics include pathology image analysis, LLM in medical domain, and multi-modality decision making.
+I obtained my B.E. degree in Beihang University and Ph.D. degree of Computer Science from College of Computing and Informatics, [UNC Charlotte](https://www.charlotte.edu). 
+
+My research topics include:
+  pathology image analysis, LLM in medical domain, and multi-modality decision making.
+
+I am recruiting students. If you have a purposeless curiosity about this world, feel free to contact me.
 
 
 <!--

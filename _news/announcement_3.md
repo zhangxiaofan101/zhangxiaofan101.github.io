@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
-inline: true
+title: A long announcement with details
+date: 2023-05-25 13:50:00-0800
+inline: false
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+We got a paper provisionally accepted for MICCAI 2023!
