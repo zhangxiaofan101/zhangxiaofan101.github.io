@@ -1,8 +1,10 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
+title: Large Language Model in Medical Domain
+description: We collected a dataset consists of textbooks, guidelines, EHR, medical & generic domain instruction tuning task, Q&A tasks, multi-round dialog, plugins to fine-tune a large language model (LLM) in medical domain.
+A self-evaluation prompt is added in the reward model training and standard PPO framework are further optimized for better performance. Plugins for the downstream applications are under development.
+
+img: assets/img/llm_0.png
 importance: 2
 category: work
 ---
