@@ -2,7 +2,7 @@
 layout: page
 title: Multi-modality Decision Making
 description: synthetic data generation, multi-modal data analysis, explainable decision making 
-img: assets/img/multi_0.png
+img: assets/img/multi_0.jpg
 importance: 4
 category: work
 ---

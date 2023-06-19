@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Multi-stained Pathology Image Analysis
-description: multi-strained pathology model pretraining, cross-strain image generation, lymphoma classification
+description: model pretraining, cross-strain image generation, lymphoma classification
 img: assets/img/path_0.png
 importance: 1
 category: work

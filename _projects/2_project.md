@@ -2,7 +2,6 @@
 layout: page
 title: Large Language Model in Medical Domain
 description: prompt Learning, RLHF related, downstream tasks
-
 img: assets/img/llm_0.png
 importance: 2
 category: work
