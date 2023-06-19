@@ -6,7 +6,7 @@ description: A collection of projects in our lab.
 nav: true
 nav_order: 1
 display_categories: [work, fun]
-horizontal: true
+horizontal: false
 ---
 
 <!-- pages/projects.md -->
