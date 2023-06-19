@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Large Language Model in Medical Domain
-description: We collected a dataset consists of textbooks, guidelines, EHR, medical & generic domain instruction tuning task, Q&A tasks, multi-round dialog, plugins to fine-tune a large language model (LLM) in medical domain.
-A self-evaluation prompt is added in the reward model training and standard PPO framework are further optimized for better performance. Plugins for the downstream applications are under development.
+description: prompt Learning, RLHF related, downstream tasks
 
 img: assets/img/llm_0.png
 importance: 2
@@ -45,9 +44,8 @@ To give your project a background in the portfolio page, just add the img tag to
     This image can also have a caption. It's like magic.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+We collected a dataset consists of textbooks, guidelines, EHR, medical & generic domain instruction tuning task, Q&A tasks, multi-round dialog, plugins to fine-tune a large language model (LLM) in medical domain.
+A self-evaluation prompt is added in the reward model training and standard PPO framework are further optimized for better performance. Plugins for the downstream applications are under development.
 
 
 <div class="row justify-content-sm-center">
