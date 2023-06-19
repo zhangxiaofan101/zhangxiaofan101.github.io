@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We got 2 papers accepted in ISBI 2023!
+We got 2 papers accepted by ISBI 2023!

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We got a paper accepted in CVPR 2023!
+A paper accepted by CVPR 2023! Canada, here I come!

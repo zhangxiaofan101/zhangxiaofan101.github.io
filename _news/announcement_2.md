@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We got 2 papers accepted in ACL 2023!
+We got 2 papers accepted in ACL 2023! Maybe I should stay in Canada and wait.
