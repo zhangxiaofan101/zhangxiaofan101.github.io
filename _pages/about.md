@@ -26,7 +26,7 @@ Prior to SJTU, I spent two years in SenseBrain located in New Jersey, and one ye
 
 I obtained my B.E. degree in Beihang University and Ph.D. degree of Computer Science from College of Computing and Informatics, [UNC Charlotte](https://www.charlotte.edu). 
 
-My research topics include:
+My research topics include:  
   pathology image analysis, LLM in medical domain, and multi-modality decision making.
 
 I am recruiting students. If you have a purposeless curiosity about this world, feel free to contact me.

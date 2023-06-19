@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-A paper is provisionally accepted for MICCAI 2023! $Canada^3$
+A paper is provisionally accepted for MICCAI 2023! $$Canada^3$$
