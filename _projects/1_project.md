@@ -10,7 +10,7 @@ category: work
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/path_1.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/path_wsi.png" title="Pathology WSIs with HE and IHC stains" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <!-- <div class="caption">
@@ -23,3 +23,10 @@ We initially attempted qualitative and quantitative analyses on the PD-L1. The f
 
 
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/path_pretrain.png" title="Pretrain Framework" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+Here is the proposed self-supervised learning (SSL) framework. This framework aims at exploiting characteristics of histopathological images by introducing a pretext token during the training. The pretext token is only a small piece of image, but contains special knowledge. [Code & Model](https://github.com/openmedlab/PathoDuet)
