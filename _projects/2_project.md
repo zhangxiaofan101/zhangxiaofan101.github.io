@@ -21,7 +21,7 @@ We released [PULSE](https://github.com/openmedlab/PULSE), a Chinese medical larg
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/llm_1.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/llm_1.png" title="Model Description" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -30,7 +30,7 @@ We collected a dataset consists of textbooks, guidelines, EHR, medical & generic
 A self-evaluation prompt is added in the reward model training and standard PPO framework are further optimized for better performance. Plugins for the downstream applications are under development.
 
 
-#### Elo Evaluation
+<!-- #### Elo Evaluation
 | model_name                    | model_size   |   ALL |   MedQA_Mainland |   PromptCBLUE |   webMedQA |
 |:------------------------------|:-------------|------:|-----------------:|--------------:|-----------:|
 | GPT4                          | 220B*8(?)    |  1195 |             1087 |          1134 |       1107 |
@@ -42,5 +42,5 @@ A self-evaluation prompt is added in the reward model training and standard PPO 
 | QiZhenGPT                     | 13B          |   918 |              949 |           935 |        974 |
 | Med-ChatGLM                   | 6B           |   864 |              988 |           921 |        859 |
 | BenTsao                       | 7B           |   846 |              966 |           913 |        859 |
-| DoctorGLM                     | 6B           |   812 |              935 |           891 |        856 |
+| DoctorGLM                     | 6B           |   812 |              935 |           891 |        856 | -->
 
