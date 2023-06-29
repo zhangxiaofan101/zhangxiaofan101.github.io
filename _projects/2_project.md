@@ -7,21 +7,6 @@ importance: 2
 category: work
 ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/llm_1.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<!-- <div class="caption">
-    This image can also have a caption. It's like magic.
-</div> -->
-
-We collected a dataset consists of textbooks, guidelines, EHR, medical & generic domain instruction tuning task, Q&A tasks, multi-round dialog, plugins to fine-tune a large language model (LLM) in medical domain.
-
-A self-evaluation prompt is added in the reward model training and standard PPO framework are further optimized for better performance. Plugins for the downstream applications are under development.
-
-
-We released [PULSE](https://github.com/openmedlab/PULSE), a Chinese medical large language model and its related applications.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -29,7 +14,23 @@ We released [PULSE](https://github.com/openmedlab/PULSE), a Chinese medical larg
     </div>
 </div>
 
-### Elo Evaluation
+We released [PULSE](https://github.com/openmedlab/PULSE), a Chinese medical large language model and its related applications.
+
+
+#### Model Description
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/llm_1.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+We collected a dataset consists of textbooks, guidelines, EHR, medical & generic domain instruction tuning task, Q&A tasks, multi-round dialog, plugins to fine-tune a large language model (LLM) in medical domain.
+
+A self-evaluation prompt is added in the reward model training and standard PPO framework are further optimized for better performance. Plugins for the downstream applications are under development.
+
+
+#### Elo Evaluation
 | model_name                    | model_size   |   ALL |   MedQA_Mainland |   PromptCBLUE |   webMedQA |
 |:------------------------------|:-------------|------:|-----------------:|--------------:|-----------:|
 | GPT4                          | 220B*8(?)    |  1195 |             1087 |          1134 |       1107 |

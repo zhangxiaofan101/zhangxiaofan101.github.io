@@ -22,6 +22,7 @@ Hematoxylin and Eosin (H&E) stained images are the most common modality of patho
 We initially attempted qualitative and quantitative analyses on the PD-L1. The focus on the project of lymphoma diagnosis with both H&E image and tens of IHC markers, simulating the entire workflow of pathological diagnosis.
 
 
+#### Model Pretraining
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
