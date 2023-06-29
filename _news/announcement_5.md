@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome to the exciting journey of discovery with our newly released OpenMEDLab! 
-date: 2023-05-25 13:50:00-0800
+date: 2023-06-29 12:00:00-0800
 inline: false
 related_posts: false
 ---
