@@ -43,3 +43,4 @@ A self-evaluation prompt is added in the reward model training and standard PPO 
 | Med-ChatGLM                   | 6B           |   864 |              988 |           921 |        859 |
 | BenTsao                       | 7B           |   846 |              966 |           913 |        859 |
 | DoctorGLM                     | 6B           |   812 |              935 |           891 |        856 |
+
