@@ -148,6 +148,43 @@
 
 <p>A self-evaluation prompt is added in the reward model training and standard PPO framework are further optimized for better performance. Plugins for the downstream applications are under development.</p>
 
+<p>We released <a href="https://github.com/openmedlab/PULSE" rel="external nofollow noopener" target="_blank">PULSE</a>, a Chinese medical large language model and its related applications.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/llm_logo-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/llm_logo-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/llm_logo-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/llm_logo.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="PULSE" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<h3 id="elo-evaluation">Elo Evaluation</h3>
+<p>| model_name                    | model_size   |   ALL |   MedQA_Mainland |   PromptCBLUE |   webMedQA |
+|:——————————|:————-|——:|—————–:|————–:|———–:|
+| GPT4                          | 220B*8(?)    |  1195 |             1087 |          1134 |       1107 |
+| ChatGPT                       | 175B(?)      |  1123 |             1053 |          1089 |       1067 |
+| PULSE_7b with prompt          | 7B           |  1074 |             1019 |          1047 |       1060 |
+| PULSE_14b                     | 14B          |  1055 |             1001 |          1037 |       1056 |
+| PULSE_7b                      | 7B           |  1054 |             1028 |          1037 |       1030 |
+| BianQue                       | 6B           |   926 |              939 |           920 |       1011 |
+| QiZhenGPT                     | 13B          |   918 |              949 |           935 |        974 |
+| Med-ChatGLM                   | 6B           |   864 |              988 |           921 |        859 |
+| BenTsao                       | 7B           |   846 |              966 |           913 |        859 |
+| DoctorGLM                     | 6B           |   812 |              935 |           891 |        856 |</p>
+
           </article>
 
         </div>
