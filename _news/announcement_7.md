@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We released PULSE-20B LLM along with fine-tuning, quantization, and evaluation method.
+We released [PULSE-20B](https://github.com/openmedlab/PULSE) LLM along with fine-tuning, quantization, and evaluation method.
