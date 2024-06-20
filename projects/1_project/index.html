@@ -148,7 +148,28 @@
 
 <p>We initially attempted qualitative and quantitative analyses on the PD-L1. The focus on the project of lymphoma diagnosis with both H&amp;E image and tens of IHC markers, simulating the entire workflow of pathological diagnosis.</p>
 
-<h4 id="model-pretraining">Model Pretraining</h4>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/path_pdl1-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/path_pdl1-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/path_pdl1-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/path_pdl1.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Assessment of PD-L1 Expression" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<h4 id="foundation-model-pathoduet">Foundation Model PathoDuet</h4>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -156,13 +177,13 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/path_pretrain-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/path_pretrain-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/path_pretrain-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/path_duet-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/path_duet-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/path_duet-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/path_pretrain.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Pretrain Framework" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/path_duet.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Pretrain Framework" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -172,6 +193,31 @@
 </div>
 
 <p>Here is the proposed self-supervised learning (SSL) framework. This framework aims at exploiting characteristics of histopathological images by introducing a pretext token during the training. The pretext token is only a small piece of image, but contains special knowledge. <a href="https://github.com/openmedlab/PathoDuet" rel="external nofollow noopener" target="_blank">Code &amp; Model</a></p>
+
+<h4 id="foundation-model-adaptation-pathotune">Foundation Model Adaptation PathoTune</h4>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/path_tune-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/path_tune-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/path_tune-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/path_tune.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Adaptation Framework" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+
+<p>To mitigate foundation-task gap and the task-instance gap, we introduce PathoTune, a framework designed to efficiently adapt pathological or even visual foundation models to pathology-specific tasks via multi-modal prompt tuning.</p>
 
           </article>
 
