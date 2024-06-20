@@ -9,11 +9,11 @@ nav_order: 5
 
 ## SJTU
 
-- MEM8303: Artificial Intelligence, Fall 2023
+- MEM8303: Artificial Intelligence, 2023 Fall
 
-- AI2619: Digital Signal and Image Processing, Spring 2024
+- AI2619: Digital Signal and Image Processing, 2024 Spring
 
-- Upcoming: Artificial Intelligence, Fall 2024
+- Upcoming: Artificial Intelligence, 2024 Fall
 
 
 <!--
