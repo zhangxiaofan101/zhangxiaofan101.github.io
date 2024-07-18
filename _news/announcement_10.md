@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-2 papers are accepted Medical Image Analysis (>^ω^<)
+2 papers are accepted by Medical Image Analysis (>^ω^<)
