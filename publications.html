@@ -89,6 +89,7 @@
 
     const byYear = {};
     pubs.forEach(p => { const y = p.year||'n.d.'; (byYear[y]=byYear[y]||[]).push(p); });
+    Object.values(byYear).forEach(list => list.sort((a,b) => (a.venue_abbr||'zzz').localeCompare(b.venue_abbr||'zzz')));
     const years = Object.keys(byYear).sort((a,b)=>b.localeCompare(a));
 
     const html = [];
