@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications — Xiaofan Zhang</title>
+  <title>Publications — Undefined Lab</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
@@ -11,12 +11,12 @@
 
 <nav class="navbar">
   <div class="nav-container">
-    <a class="nav-brand" href="index.html"><span>✦</span> Xiaofan Zhang</a>
+    <a class="nav-brand" href="index.html"><img src="img/logo.jpg" alt="" class="nav-logo"> Undefined Lab</a>
     <div class="nav-right">
-      <a class="nav-link" href="index.html">about</a>
-      <a class="nav-link" href="projects.html">projects</a>
-      <a class="nav-link" href="publications.html">publications</a>
-      <a class="nav-link" href="teaching.html">teaching</a>
+      <a class="nav-link" href="index.html">About</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="publications.html">Publications</a>
+      <a class="nav-link" href="teaching.html">Teaching</a>
       <div class="nav-divider"></div>
       <a class="icon-btn" data-email href="#" aria-label="Email">
         <i class="fas fa-envelope"></i>
@@ -41,15 +41,14 @@
 
   <div id="pub-container">
     <div class="pub-loading">
-      <div class="spinner"></div><br>
-      Loading publications…
+      <div class="spinner"></div><br>Loading publications…
     </div>
   </div>
 
 </main>
 
 <footer>
-  ✦ Xiaofan Zhang &nbsp;·&nbsp; Qing Yuan Research Institute, SJTU
+  ✦ Undefined Lab &nbsp;·&nbsp; Qing Yuan Research Institute, SJTU
 </footer>
 
 <script src="js/main.js"></script>
@@ -57,11 +56,20 @@
 (function () {
   const container = document.getElementById('pub-container');
 
-  // Highlight "Xiaofan Zhang" in author string
-  function highlightSelf(authors) {
-    if (!authors) return '';
-    return authors.replace(/(Xiaofan Zhang)/gi,
-      '<strong>$1</strong>');
+  function highlightSelf(str) {
+    if (!str) return '';
+    return str.replace(/(Xiaofan Zhang)/gi, '<strong>$1</strong>');
+  }
+
+  // Map venue string → badge class
+  function badgeClass(venue) {
+    if (!venue) return 'badge-mint';
+    const v = venue.toLowerCase();
+    if (/neurips|cvpr|iccv|eccv|icml|iclr/.test(v)) return 'badge-blue';
+    if (/miccai|isbi|embc|midl/.test(v))            return 'badge-mint';
+    if (/acl|emnlp|coling|naacl|aaai/.test(v))      return 'badge-yellow';
+    if (/arxiv|preprint/.test(v))                    return 'badge-red';
+    return 'badge-purple'; // journals (TMI, MedIA, JBHI, Nature, …)
   }
 
   function renderPubs(pubs) {
@@ -70,70 +78,55 @@
       return;
     }
 
-    // Group by year
     const byYear = {};
     for (const p of pubs) {
       const y = p.year || 'n.d.';
-      if (!byYear[y]) byYear[y] = [];
-      byYear[y].push(p);
+      (byYear[y] = byYear[y] || []).push(p);
     }
-
     const years = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
-    const html = [];
 
+    const html = [];
     for (const year of years) {
       html.push(`<p class="year-heading">${year}</p>`);
       for (const p of byYear[year]) {
-        const venueHtml = p.venue
-          ? `<p class="pub-venue-line">${p.venue}</p>`
-          : '';
-        const citesHtml = p.citations > 0
-          ? `<span class="pub-link" title="Citations">
-               <i class="fas fa-quote-right" style="font-size:0.7em;margin-right:3px;"></i>${p.citations}
-             </span>`
-          : '';
-        const linkHtml = p.url
+        const bc      = badgeClass(p.venue);
+        const linkBtn = p.url
           ? `<a class="pub-link" href="${p.url}" target="_blank" rel="noopener">
-               <i class="fas fa-external-link-alt" style="font-size:0.7em;margin-right:3px;"></i>link
-             </a>`
-          : '';
-
+               <i class="fas fa-external-link-alt" style="font-size:.7em;margin-right:3px"></i>link
+             </a>` : '';
+        const citeBtn = p.citations > 0
+          ? `<span class="pub-link">
+               <i class="fas fa-quote-right" style="font-size:.7em;margin-right:3px"></i>${p.citations}
+             </span>` : '';
         html.push(`
           <div class="pub-card">
             <div class="pub-meta">
-              ${p.venue ? `<span class="badge badge-venue">${p.venue}</span>` : ''}
-              ${p.year  ? `<span class="badge badge-year">${p.year}</span>` : ''}
+              ${p.venue ? `<span class="badge ${bc}">${p.venue}</span>` : ''}
+              ${p.year  ? `<span class="badge badge-yellow">${p.year}</span>` : ''}
             </div>
             <p class="pub-title">${p.url
               ? `<a href="${p.url}" target="_blank" rel="noopener">${p.title}</a>`
-              : p.title
-            }</p>
+              : p.title}</p>
             <p class="pub-authors">${highlightSelf(p.authors)}</p>
-            ${venueHtml}
-            ${(citesHtml || linkHtml) ? `<div class="pub-links">${linkHtml}${citesHtml}</div>` : ''}
+            ${(linkBtn || citeBtn) ? `<div class="pub-links">${linkBtn}${citeBtn}</div>` : ''}
           </div>`);
       }
     }
-
     container.innerHTML = html.join('');
   }
 
-  // publications.json lives at the site root (one level up from preview/)
   fetch('publications.json')
-    .then(r => {
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return r.json();
-    })
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
     .then(renderPubs)
     .catch(err => {
       container.innerHTML = `
         <div class="pub-error">
-          <strong>Could not load publications.</strong><br>
-          Run the GitHub Action once to generate <code>publications.json</code>,
-          or check the
+          <strong>Publications not loaded yet.</strong><br>
+          Run the GitHub Action <em>Fetch Publications from Google Scholar</em> once to
+          generate <code>publications.json</code>, or view the full list on
           <a href="https://scholar.google.com/citations?user=30e95fEAAAAJ"
-             target="_blank" rel="noopener">Google Scholar page</a> directly.<br>
-          <small style="opacity:0.7;margin-top:0.4rem;display:block;">${err}</small>
+             target="_blank" rel="noopener">Google Scholar</a>.<br>
+          <small style="opacity:.7;margin-top:.4rem;display:block">${err}</small>
         </div>`;
     });
 })();

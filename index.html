@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xiaofan Zhang</title>
+  <title>Undefined Lab</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
@@ -11,12 +11,12 @@
 
 <nav class="navbar">
   <div class="nav-container">
-    <a class="nav-brand" href="index.html"><span>✦</span> Xiaofan Zhang</a>
+    <a class="nav-brand" href="index.html"><img src="img/logo.jpg" alt="" class="nav-logo"> Undefined Lab</a>
     <div class="nav-right">
-      <a class="nav-link" href="index.html">about</a>
-      <a class="nav-link" href="projects.html">projects</a>
-      <a class="nav-link" href="publications.html">publications</a>
-      <a class="nav-link" href="teaching.html">teaching</a>
+      <a class="nav-link" href="index.html">About</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="publications.html">Publications</a>
+      <a class="nav-link" href="teaching.html">Teaching</a>
       <div class="nav-divider"></div>
       <a class="icon-btn" data-email href="#" aria-label="Email">
         <i class="fas fa-envelope"></i>
@@ -34,7 +34,13 @@
 
   <!-- Profile -->
   <div class="profile-card">
-    <div class="profile-pic-placeholder">🌿</div>
+    <div class="profile-pic-wrap">
+      <img src="img/prof_pic.jpg"
+           alt="Xiaofan Zhang"
+           class="profile-pic"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="profile-pic-placeholder" style="display:none">🌿</div>
+    </div>
     <div class="profile-bio">
       <h1>Xiaofan Zhang</h1>
       <p class="affil">
@@ -62,77 +68,35 @@
         <strong>multi-modality decision making</strong>.
       </p>
       <p>
-        I am recruiting students. If you have a purposeless curiosity about this world,
+        I am recruiting students. If you have
+        <span class="highlight-phrase">a purposeless curiosity about this world</span>,
         feel free to <a data-email href="#">contact me</a>! ✉
       </p>
     </div>
   </div>
 
-  <!-- News -->
+  <!-- News — edit js/news.js to add items -->
   <h2 class="section-title"><span class="star">✦</span> News</h2>
   <div class="news-card">
-    <ul style="list-style:none;">
-      <li class="news-item">
-        <span class="news-date">Jan 2025</span>
-        <span>O1 Replication Journey — Part 3: Inference-time Scaling for Medical Reasoning released! ^_^</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Nov 2024</span>
-        <span>3 papers accepted at <strong>COLING 2025</strong>: multi-turn medical dialog evaluation, Text2Cypher, and RAG.</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Sep 2024</span>
-        <span>One paper accepted at <strong>NeurIPS 2024</strong>. Emmmm Canada once more?</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Jul 2024</span>
-        <span>2 papers accepted by <strong>Medical Image Analysis</strong> (&gt;^ω^&lt;)</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Jun 2024</span>
-        <span>3 papers accepted at <strong>MICCAI 2024</strong>! See you in Morocco (o^^o)</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Mar 2024</span>
-        <span>One paper accepted at <strong>COLING 2024</strong> and one at <strong>CVPR 2024</strong>.</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Dec 2023</span>
-        <span>Released <a href="https://github.com/openmedlab/PULSE" target="_blank" rel="noopener">PULSE-20B</a> LLM with fine-tuning, quantization, and evaluation.</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Jul 2023</span>
-        <span>Paper accepted at <strong>IEEE TMI</strong>!</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Jun 2023</span>
-        <span>All <a href="https://github.com/openmedlab" target="_blank" rel="noopener">OpenMEDLab</a> models, code, and data fully released at WAIC 2023.</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">May 2023</span>
-        <span>Paper provisionally accepted at <strong>MICCAI 2023</strong>! Canada³</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">May 2023</span>
-        <span>2 papers accepted at <strong>ACL 2023</strong>!</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Feb 2023</span>
-        <span>Paper accepted at <strong>CVPR 2023</strong>! Canada, here I come!</span>
-      </li>
-      <li class="news-item">
-        <span class="news-date">Jan 2023</span>
-        <span>2 papers accepted at <strong>ISBI 2023</strong>!</span>
-      </li>
-    </ul>
+    <ul id="news-list" style="list-style:none;"></ul>
   </div>
 
 </main>
 
 <footer>
-  ✦ Xiaofan Zhang &nbsp;·&nbsp; Qing Yuan Research Institute, SJTU
+  ✦ Undefined Lab &nbsp;·&nbsp; Qing Yuan Research Institute, SJTU
 </footer>
 
+<script src="js/news.js"></script>
 <script src="js/main.js"></script>
+<script>
+  const ul = document.getElementById('news-list');
+  NEWS.forEach(item => {
+    const li = document.createElement('li');
+    li.className = 'news-item';
+    li.innerHTML = `<span class="news-date">${item.date}</span><span>${item.html}</span>`;
+    ul.appendChild(li);
+  });
+</script>
 </body>
 </html>
