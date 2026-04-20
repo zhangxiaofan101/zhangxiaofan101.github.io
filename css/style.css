@@ -310,6 +310,19 @@ a:hover { text-decoration: underline; }
 .project-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; }
 
 /* ── Project detail page ──────────────────────────────── */
+.project-overview-fig {
+  margin-bottom: 2rem;
+  border: 2px solid var(--border); border-radius: var(--r-card);
+  overflow: hidden; box-shadow: var(--shadow);
+}
+.project-overview-fig img { width: 100%; display: block; }
+
+.paper-group-heading {
+  font-family: 'Caveat', cursive; font-size: 1.3rem; font-weight: 700;
+  color: var(--text-muted); margin: 2rem 0 0.8rem;
+  border-bottom: 2px dashed var(--border); padding-bottom: 0.3rem;
+}
+
 .project-back {
   display: inline-flex; align-items: center; gap: 0.4rem;
   font-size: 0.85rem; font-weight: 600; color: var(--text-muted);
@@ -324,22 +337,24 @@ a:hover { text-decoration: underline; }
 }
 
 .paper-entry {
-  display: flex; gap: 1.5rem; align-items: flex-start;
   background: var(--surface); border: 2px solid var(--border);
   border-radius: 10px 16px 12px 14px / 14px 10px 16px 12px;
   box-shadow: 3px 4px 0 var(--border);
-  padding: 1.4rem; margin-bottom: 1.2rem;
+  overflow: hidden; margin-bottom: 1.2rem;
   transition: transform 0.15s, box-shadow 0.15s;
 }
 .paper-entry:hover { transform: translateY(-2px); box-shadow: 4px 6px 0 var(--mint); }
 
 .paper-figure {
-  width: 200px; flex-shrink: 0;
-  border-radius: 8px; border: 2px solid var(--border);
-  object-fit: cover;
+  display: block;
+  width: auto; max-width: 100%; max-height: 360px;
+  object-fit: contain;
+  margin: 1.2rem auto 0;
+  padding: 0 1.4rem;
+  border-bottom: none;
 }
 
-.paper-content { flex: 1; min-width: 0; }
+.paper-content { padding: 1rem 1.4rem 1.2rem; border-top: 2px dashed var(--border); margin-top: 1rem; }
 
 .paper-entry-title {
   font-weight: 700; font-size: 0.95rem; margin-bottom: 0.3rem; color: var(--text);
@@ -352,8 +367,7 @@ a:hover { text-decoration: underline; }
 .paper-entry-desc { font-size: 0.87rem; color: var(--text-muted); line-height: 1.6; }
 
 @media (max-width: 640px) {
-  .paper-entry { flex-direction: column; }
-  .paper-figure { width: 100%; }
+  .paper-figure { max-height: 200px; }
 }
 
 /* ── Teaching ─────────────────────────────────────────── */

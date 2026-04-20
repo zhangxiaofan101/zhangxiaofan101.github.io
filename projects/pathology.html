@@ -40,39 +40,152 @@
   </h2>
 
   <p class="project-overview">
-    We develop foundation models and analytical pipelines for digital pathology,
-    spanning H&amp;E and IHC staining protocols, cross-stain image synthesis,
-    and downstream tasks such as lymphoma subtype classification.
+    Pathology remains the gold standard for cancer diagnosis, yet manual slide analysis is
+    time-consuming and subject to inter-observer variability — making it one of the most
+    impactful areas for AI assistance in medicine.
+    Our work spans the full stack of computational pathology: from foundation models pretrained
+    across H&amp;E and IHC stains (PathoDuet, PathOrchestra) to agentic diagnostic systems
+    (PathFound) and efficient adaptation methods (PathoTune). On the application side,
+    we built benchmarks for digestive-system lesion detection (DigestPath) and deployed
+    AI systems for PD-L1 scoring and cross-stain WSI alignment in real clinical settings.
   </p>
 
-  <!-- ── Paper entries — duplicate this block for each paper ── -->
+  <!-- Overview figure -->
+  <div class="project-overview-fig">
+    <img src="../img/projects/pathology/overview.jpg" alt="Pathology project overview"
+         onerror="this.parentElement.style.display='none'">
+  </div>
+
+  <!-- ── Foundation Models ───────────────────────────────── -->
+  <p class="paper-group-heading">Foundation Models</p>
 
   <div class="paper-entry">
-    <img src="../img/projects/pathology/paper1.png" alt="" class="paper-figure"
+    <img src="../img/projects/pathology/pathoduet.jpg" alt="" class="paper-figure"
          onerror="this.style.display='none'">
     <div class="paper-content">
       <p class="paper-entry-title">
-        <a href="#" target="_blank" rel="noopener">PathoDuet: Foundation Models for Pathological Slide Analysis of H&amp;E and IHC Stains</a>
+        <a href="https://www.sciencedirect.com/science/article/pii/S1361841524002147" target="_blank" rel="noopener">
+          PathoDuet: Foundation Models for Pathological Slide Analysis of H&amp;E and IHC Stains
+        </a>
       </p>
-      <p class="paper-entry-authors">Authors · <em>Venue Year</em></p>
+      <p class="paper-entry-authors"><em>Medical Image Analysis, 2024</em></p>
       <p class="paper-entry-desc">
         A dual-encoder foundation model pretrained across H&amp;E and IHC stains
-        using a novel cross-stain pretext task, enabling strong transfer to
-        downstream patch-level and slide-level tasks.
+        using a novel cross-stain pretext task, enabling strong transfer to patch-level
+        and slide-level tasks without stain-specific finetuning.
       </p>
     </div>
   </div>
 
   <div class="paper-entry">
-    <img src="../img/projects/pathology/paper2.png" alt="" class="paper-figure"
+    <img src="../img/projects/pathology/pathorchestra.jpg" alt="" class="paper-figure"
          onerror="this.style.display='none'">
     <div class="paper-content">
       <p class="paper-entry-title">
-        <a href="#" target="_blank" rel="noopener">Paper Title Placeholder</a>
+        <a href="https://www.nature.com/articles/s41746-025-02027-w" target="_blank" rel="noopener">
+          PathOrchestra: A Comprehensive Foundation Model for Computational Pathology with Over 100 Diverse Clinical-Grade Tasks
+        </a>
       </p>
-      <p class="paper-entry-authors">Authors · <em>Venue Year</em></p>
+      <p class="paper-entry-authors"><em>npj Digital Medicine, 2025</em></p>
       <p class="paper-entry-desc">
-        Brief description of the contribution and key results.
+        A large-scale pathology foundation model pretrained on millions of slides,
+        covering over 100 clinical-grade tasks across diverse tissue types and staining protocols.
+        Achieves state-of-the-art on both patch-level and slide-level benchmarks.
+      </p>
+    </div>
+  </div>
+
+  <div class="paper-entry">
+    <img src="../img/projects/pathology/pathofound.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://arxiv.org/abs/2512.23545" target="_blank" rel="noopener">
+          PathFound: An Agentic Multimodal Model Activating Evidence-seeking Pathological Diagnosis
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>arXiv, 2024</em></p>
+      <p class="paper-entry-desc">
+        An agentic diagnostic model that actively seeks evidence across whole-slide images,
+        iteratively selecting informative regions and integrating multimodal cues
+        to produce interpretable pathological diagnoses.
+      </p>
+    </div>
+  </div>
+
+  <div class="paper-entry">
+    <img src="../img/projects/pathology/pathotune.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-72083-3_37" target="_blank" rel="noopener">
+          PathoTune: Adapting Visual Foundation Model to Pathological Specialists
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>MICCAI, 2024</em></p>
+      <p class="paper-entry-desc">
+        A parameter-efficient finetuning framework that adapts general visual foundation models
+        to pathology-specific tasks, bridging the domain gap between natural images and
+        histological stains with minimal labeled data.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── Benchmarks ──────────────────────────────────────── -->
+  <p class="paper-group-heading">Benchmarks</p>
+
+  <div class="paper-entry">
+    <img src="../img/projects/pathology/digestpath.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://www.sciencedirect.com/science/article/pii/S1361841522001323" target="_blank" rel="noopener">
+          DigestPath: A Benchmark Dataset with Challenge Review for the Pathological Detection and Segmentation of Digestive-System
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>Medical Image Analysis, 2022</em></p>
+      <p class="paper-entry-desc">
+        A large-scale benchmark for pathological lesion detection and segmentation in the digestive system,
+        introduced alongside a public challenge. Covers colonoscopy and gastric tissue with
+        pixel-level annotations from expert pathologists.
+        · <a href="https://digestpath2019.grand-challenge.org" target="_blank" rel="noopener">Challenge page</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- ── Applications ───────────────────────────────────── -->
+  <p class="paper-group-heading">Applications</p>
+
+  <div class="paper-entry">
+    <img src="../img/projects/pathology/pdl1.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://www.nature.com/articles/s41698-024-00577-y" target="_blank" rel="noopener">
+          Artificial Intelligence-based Assessment of PD-L1 Expression in Diffuse Large B Cell Lymphoma
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>npj Precision Oncology, 2024</em></p>
+      <p class="paper-entry-desc">
+        An AI pipeline for automated PD-L1 scoring in DLBCL IHC slides,
+        achieving pathologist-level agreement and enabling scalable
+        immunotherapy biomarker assessment across large patient cohorts.
+      </p>
+    </div>
+  </div>
+
+  <div class="paper-entry">
+    <img src="../img/projects/pathology/ihc.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        SAR2Net: Learning Spatially Anchored Representations for Retrieval-Guided Cross-Stain Alignment
+      </p>
+      <p class="paper-entry-authors"><em>CVPR, 2026</em></p>
+      <p class="paper-entry-desc">
+        A framework for cross-stain WSI alignment that learns spatially anchored representations
+        and reformulates the alignment problem as region-level feature retrieval,
+        achieving robust correspondence under severe tissue distortions without global pre-alignment.
       </p>
     </div>
   </div>
