@@ -1,27 +1,11 @@
 [
   {
-    "title": "Grounded knowledge-enhanced medical vision–language pre-training for chest X-ray",
-    "authors": "Qiao Deng and Zhongzhen Huang and Yunqi Wang and Zhichuan Wang and Zhao Wang and Xiaofan Zhang and Qi Dou and Yeung Yu Hui and Edward S Hui",
-    "year": "2026",
-    "venue": "Biomedical Signal Processing and Control",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1746809425009279",
-    "venue_abbr": "BSPC"
-  },
-  {
     "title": "GuideGen: A Text-Guided Framework for Paired Full-torso Anatomy and CT Volume Generation",
     "authors": "Linrui Dai and Rongzhao Zhang and Yongrui Yu and Xiaofan Zhang",
     "year": "2026",
     "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
     "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37344",
     "venue_abbr": "AAAI"
-  },
-  {
-    "title": "CT-Flow: Orchestrating CT Interpretation Workflow with Model Context Protocol Servers",
-    "authors": "Yannian Gu and Xizhuo Zhang and Linjie Mu and Yongrui Yu and Zhongzhen Huang and Shaoting Zhang and Xiaofan Zhang",
-    "year": "2026",
-    "venue": "arXiv preprint arXiv:2603.00123",
-    "url": "https://arxiv.org/abs/2603.00123",
-    "venue_abbr": "arXiv"
   },
   {
     "title": "EHRWorld: A Patient-Centric Medical World Model for Long-Horizon Clinical Trajectories",
@@ -43,9 +27,9 @@
     "title": "Concepts from Representations: Post-hoc Concept Bottleneck Models via Sparse Decomposition of Visual Representations",
     "authors": "Shizhan Gong and Xiaofan Zhang and Qi Dou",
     "year": "2026",
-    "venue": "arXiv preprint arXiv:2601.12303",
-    "url": "https://arxiv.org/abs/2601.12303",
-    "venue_abbr": "arXiv"
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "url":"https://ojs.aaai.org/index.php/AAAI/article/view/42424",
+    "venue_abbr": "AAAI"
   },
   {
     "title": "MedLSAM: Localize and segment anything model for 3D CT images",
@@ -64,20 +48,20 @@
     "venue_abbr": "COLING"
   },
   {
-    "title": "O1 Replication Journey--Part 3: Inference-time Scaling for Medical Reasoning",
-    "authors": "Zhongzhen Huang and Gui Geng and Shengyi Hua and Zhen Huang and Haoyang Zou and Shaoting Zhang and Pengfei Liu and Xiaofan Zhang",
-    "year": "2025",
-    "venue": "arXiv preprint arXiv:2501.06458",
-    "url": "https://arxiv.org/abs/2501.06458",
-    "venue_abbr": "arXiv"
-  },
-  {
     "title": "Synthet2c: Generating synthetic data for fine-tuning large language models on the text2cypher task",
     "authors": "Ziije Zhong and Linqing Zhong and Zhaoze Sun and Qingyun Jin and Zengchang Qin and Xiaofan Zhang",
     "year": "2025",
     "venue": "",
     "url": "https://aclanthology.org/2025.coling-main.46/",
     "venue_abbr": "COLING"
+  },
+  {
+    "title": "O1 Replication Journey--Part 3: Inference-time Scaling for Medical Reasoning",
+    "authors": "Zhongzhen Huang and Gui Geng and Shengyi Hua and Zhen Huang and Haoyang Zou and Shaoting Zhang and Pengfei Liu and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "arXiv preprint arXiv:2501.06458",
+    "url": "https://arxiv.org/abs/2501.06458",
+    "venue_abbr": "arXiv"
   },
   {
     "title": "MeNTi: Bridging medical calculator and LLM agent with nested tool calling",
@@ -240,22 +224,6 @@
     "venue_abbr": "ISBI"
   },
   {
-    "title": "CP-Env: Evaluating Large Language Models on Clinical Pathways in a Controllable Hospital Environment",
-    "authors": "Yakun Zhu and Zhongzhen Huang and Qianhan Feng and Linjie Mu and Yannian Gu and Shaoting Zhang and Qi Dou and Xiaofan Zhang",
-    "year": "2025",
-    "venue": "arXiv preprint arXiv:2512.10206",
-    "url": "https://arxiv.org/abs/2512.10206",
-    "venue_abbr": "arXiv"
-  },
-  {
-    "title": "Radiologist Copilot: An Agentic Assistant with Orchestrated Tools for Radiology Reporting with Quality Control",
-    "authors": "Yongrui Yu and Zhongzhen Huang and Linjie Mu and Shaoting Zhang and Xiaofan Zhang",
-    "year": "2025",
-    "venue": "arXiv preprint arXiv:2512.02814",
-    "url": "https://arxiv.org/abs/2512.02814",
-    "venue_abbr": "arXiv"
-  },
-  {
     "title": "Usfm: A universal ultrasound foundation model generalized to tasks and organs towards label efficient image analysis",
     "authors": "Jing Jiao and Jin Zhou and Xiaokang Li and Menghua Xia and Yi Huang and Lihong Huang and Na Wang and Xiaofan Zhang and Shichong Zhou and Yuanyuan Wang and Yi Guo",
     "year": "2024",
@@ -376,28 +344,12 @@
     "venue_abbr": "MICCAI"
   },
   {
-    "title": "GuideGen: A Text-Guided Framework for Full-torso Anatomy and CT Volume Generation",
-    "authors": "Linrui Dai and Rongzhao Zhang and Yongrui Yu and Xiaofan Zhang",
-    "year": "2024",
-    "venue": "arXiv e-prints",
-    "url": "https://ui.adsabs.harvard.edu/abs/2024arXiv240307247D/abstract",
-    "venue_abbr": "arXiv"
-  },
-  {
     "title": "GECSum: Generative evaluation-driven sequence level contrastive learning for abstractive summarization",
     "authors": "Jiawen Xie and Shaoting Zhang and Xiaofan Zhang",
     "year": "2024",
     "venue": "",
     "url": "https://aclanthology.org/2024.lrec-main.670/",
     "venue_abbr": "COLING"
-  },
-  {
-    "title": "Modality-Aware and Shift Mixer for Multi-modal Brain Tumor Segmentation",
-    "authors": "Zhongzhen Huang and Linda Wei and Shaoting Zhang and Xiaofan Zhang",
-    "year": "2024",
-    "venue": "arXiv preprint arXiv:2403.02074",
-    "url": "https://arxiv.org/abs/2403.02074",
-    "venue_abbr": "arXiv"
   },
   {
     "title": "Kiut: Knowledge-injected u-transformer for radiology report generation",
