@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Xiaofan Zhang</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a class="nav-brand" href="index.html"><span>✦</span> Xiaofan Zhang</a>
+    <div class="nav-right">
+      <a class="nav-link" href="index.html">about</a>
+      <a class="nav-link" href="projects.html">projects</a>
+      <a class="nav-link" href="publications.html">publications</a>
+      <a class="nav-link" href="teaching.html">teaching</a>
+      <div class="nav-divider"></div>
+      <a class="icon-btn" data-email href="#" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a class="icon-btn"
+         href="https://scholar.google.com/citations?user=30e95fEAAAAJ"
+         target="_blank" rel="noopener" aria-label="Google Scholar">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main class="main">
+
+  <h2 class="section-title" style="margin-top:0;"><span class="star">✦</span> Projects</h2>
+  <p style="font-size:0.93rem; color:var(--text-muted); margin-bottom:1.5rem;">
+    A collection of ongoing and completed research projects in our lab.
+  </p>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <span class="badge badge-venue">Pathology</span>
+      <p class="project-title">Multi-stained Pathology Image Analysis</p>
+      <p class="project-desc">
+        Foundation model pretraining across H&amp;E and IHC stains,
+        cross-stain image generation, lymphoma classification.
+        Includes <a href="https://github.com/openmedlab/PathoDuet" target="_blank" rel="noopener">PathoDuet</a>
+        and PathoTune.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <span class="badge badge-venue">LLM</span>
+      <p class="project-title">LLM in the Medical Domain</p>
+      <p class="project-desc">
+        Prompt learning, RLHF, and downstream clinical tasks.
+        Built <a href="https://github.com/openmedlab/PULSE" target="_blank" rel="noopener">PULSE</a>,
+        a Chinese medical large language model.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <span class="badge badge-venue">Vision–Language</span>
+      <p class="project-title">Vision-Language Models for Medical Images</p>
+      <p class="project-desc">
+        Combining image and report understanding for richer representations,
+        automated report generation, and medical foundation models integrated with LLMs.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <span class="badge badge-venue">Multi-modal</span>
+      <p class="project-title">Multi-modality Decision Making</p>
+      <p class="project-desc">
+        Synthetic data generation, multi-modal clinical data analysis
+        (imaging, text, structured records), and explainable diagnostic decision pathways.
+      </p>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  ✦ Xiaofan Zhang &nbsp;·&nbsp; Qing Yuan Research Institute, SJTU
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

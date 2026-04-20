@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications — Xiaofan Zhang</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a class="nav-brand" href="index.html"><span>✦</span> Xiaofan Zhang</a>
+    <div class="nav-right">
+      <a class="nav-link" href="index.html">about</a>
+      <a class="nav-link" href="projects.html">projects</a>
+      <a class="nav-link" href="publications.html">publications</a>
+      <a class="nav-link" href="teaching.html">teaching</a>
+      <div class="nav-divider"></div>
+      <a class="icon-btn" data-email href="#" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a class="icon-btn"
+         href="https://scholar.google.com/citations?user=30e95fEAAAAJ"
+         target="_blank" rel="noopener" aria-label="Google Scholar">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main class="main">
+
+  <h2 class="section-title" style="margin-top:0;"><span class="star">✦</span> Publications</h2>
+  <p style="font-size:0.93rem; color:var(--text-muted); margin-bottom:1.5rem;">
+    Fetched from
+    <a href="https://scholar.google.com/citations?user=30e95fEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+    · sorted by year · <strong>Xiaofan Zhang</strong> highlighted
+  </p>
+
+  <div id="pub-container">
+    <div class="pub-loading">
+      <div class="spinner"></div><br>
+      Loading publications…
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  ✦ Xiaofan Zhang &nbsp;·&nbsp; Qing Yuan Research Institute, SJTU
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+(function () {
+  const container = document.getElementById('pub-container');
+
+  // Highlight "Xiaofan Zhang" in author string
+  function highlightSelf(authors) {
+    if (!authors) return '';
+    return authors.replace(/(Xiaofan Zhang)/gi,
+      '<strong>$1</strong>');
+  }
+
+  function renderPubs(pubs) {
+    if (!pubs || pubs.length === 0) {
+      container.innerHTML = '<p class="pub-error">No publications found.</p>';
+      return;
+    }
+
+    // Group by year
+    const byYear = {};
+    for (const p of pubs) {
+      const y = p.year || 'n.d.';
+      if (!byYear[y]) byYear[y] = [];
+      byYear[y].push(p);
+    }
+
+    const years = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
+    const html = [];
+
+    for (const year of years) {
+      html.push(`<p class="year-heading">${year}</p>`);
+      for (const p of byYear[year]) {
+        const venueHtml = p.venue
+          ? `<p class="pub-venue-line">${p.venue}</p>`
+          : '';
+        const citesHtml = p.citations > 0
+          ? `<span class="pub-link" title="Citations">
+               <i class="fas fa-quote-right" style="font-size:0.7em;margin-right:3px;"></i>${p.citations}
+             </span>`
+          : '';
+        const linkHtml = p.url
+          ? `<a class="pub-link" href="${p.url}" target="_blank" rel="noopener">
+               <i class="fas fa-external-link-alt" style="font-size:0.7em;margin-right:3px;"></i>link
+             </a>`
+          : '';
+
+        html.push(`
+          <div class="pub-card">
+            <div class="pub-meta">
+              ${p.venue ? `<span class="badge badge-venue">${p.venue}</span>` : ''}
+              ${p.year  ? `<span class="badge badge-year">${p.year}</span>` : ''}
+            </div>
+            <p class="pub-title">${p.url
+              ? `<a href="${p.url}" target="_blank" rel="noopener">${p.title}</a>`
+              : p.title
+            }</p>
+            <p class="pub-authors">${highlightSelf(p.authors)}</p>
+            ${venueHtml}
+            ${(citesHtml || linkHtml) ? `<div class="pub-links">${linkHtml}${citesHtml}</div>` : ''}
+          </div>`);
+      }
+    }
+
+    container.innerHTML = html.join('');
+  }
+
+  // publications.json lives at the site root (one level up from preview/)
+  fetch('../publications.json')
+    .then(r => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    })
+    .then(renderPubs)
+    .catch(err => {
+      container.innerHTML = `
+        <div class="pub-error">
+          <strong>Could not load publications.</strong><br>
+          Run the GitHub Action once to generate <code>publications.json</code>,
+          or check the
+          <a href="https://scholar.google.com/citations?user=30e95fEAAAAJ"
+             target="_blank" rel="noopener">Google Scholar page</a> directly.<br>
+          <small style="opacity:0.7;margin-top:0.4rem;display:block;">${err}</small>
+        </div>`;
+    });
+})();
+</script>
+</body>
+</html>

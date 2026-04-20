@@ -9,3 +9,4 @@ _site
 .vscode
 Gemfile.lock
 vendor
+preview.html
