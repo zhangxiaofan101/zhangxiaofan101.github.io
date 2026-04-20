@@ -33,15 +33,15 @@
 <main class="main">
 
   <h2 class="section-title" style="margin-top:0;"><span class="star">✦</span> Publications</h2>
-  <p style="font-size:0.93rem; color:var(--text-muted); margin-bottom:1.5rem;">
-    Fetched from
+  <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1.8rem;">
+    77 papers · sorted by year ·
     <a href="https://scholar.google.com/citations?user=30e95fEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-    · sorted by year · <strong>Xiaofan Zhang</strong> highlighted
+    · to update: edit <code style="font-size:0.85em; background:var(--mint-light); padding:0.1rem 0.35rem; border-radius:4px;">publications.json</code>
   </p>
 
   <div id="pub-container">
     <div class="pub-loading">
-      <div class="spinner"></div><br>Loading publications…
+      <div class="spinner"></div><br>Loading…
     </div>
   </div>
 
@@ -56,78 +56,59 @@
 (function () {
   const container = document.getElementById('pub-container');
 
-  function highlightSelf(str) {
-    if (!str) return '';
-    return str.replace(/(Xiaofan Zhang)/gi, '<strong>$1</strong>');
+  // Badge colour by venue
+  function badgeClass(v) {
+    if (!v) return 'badge-mint';
+    const m = {
+      'CVPR':'badge-blue','ICCV':'badge-blue','ECCV':'badge-blue','ICLR':'badge-blue','NeurIPS':'badge-blue','AAAI':'badge-blue',
+      'MICCAI':'badge-mint','ISBI':'badge-mint','MIDL':'badge-mint',
+      'ACL':'badge-yellow','COLING':'badge-yellow','NAACL':'badge-yellow','EMNLP':'badge-yellow',
+      'TMI':'badge-purple','MedIA':'badge-purple','JBHI':'badge-purple','JMIR':'badge-purple',
+      'arXiv':'badge-red',
+    };
+    return m[v] || 'badge-purple';
   }
 
-  // Map venue string → badge class
-  function badgeClass(venue) {
-    if (!venue) return 'badge-mint';
-    const v = venue.toLowerCase();
-    if (/neurips|cvpr|iccv|eccv|icml|iclr/.test(v)) return 'badge-blue';
-    if (/miccai|isbi|embc|midl/.test(v))            return 'badge-mint';
-    if (/acl|emnlp|coling|naacl|aaai/.test(v))      return 'badge-yellow';
-    if (/arxiv|preprint/.test(v))                    return 'badge-red';
-    return 'badge-purple'; // journals (TMI, MedIA, JBHI, Nature, …)
+  function highlight(authors) {
+    return (authors || '').replace(/(Xiaofan Zhang)/gi, '<strong>$1</strong>');
   }
 
-  function renderPubs(pubs) {
-    if (!pubs || pubs.length === 0) {
-      container.innerHTML = '<p class="pub-error">No publications found.</p>';
-      return;
-    }
+  function render(pubs) {
+    if (!pubs.length) { container.innerHTML = '<p>No publications found.</p>'; return; }
 
     const byYear = {};
-    for (const p of pubs) {
-      const y = p.year || 'n.d.';
-      (byYear[y] = byYear[y] || []).push(p);
-    }
-    const years = Object.keys(byYear).sort((a, b) => b.localeCompare(a));
+    pubs.forEach(p => { const y = p.year||'n.d.'; (byYear[y]=byYear[y]||[]).push(p); });
+    const years = Object.keys(byYear).sort((a,b)=>b.localeCompare(a));
 
     const html = [];
-    for (const year of years) {
+    years.forEach(year => {
       html.push(`<p class="year-heading">${year}</p>`);
-      for (const p of byYear[year]) {
-        const bc      = badgeClass(p.venue);
-        const linkBtn = p.url
-          ? `<a class="pub-link" href="${p.url}" target="_blank" rel="noopener">
-               <i class="fas fa-external-link-alt" style="font-size:.7em;margin-right:3px"></i>link
-             </a>` : '';
-        const citeBtn = p.citations > 0
-          ? `<span class="pub-link">
-               <i class="fas fa-quote-right" style="font-size:.7em;margin-right:3px"></i>${p.citations}
-             </span>` : '';
+      byYear[year].forEach(p => {
+        const venue = p.venue_abbr || '';
+        const titleHtml = p.url
+          ? `<a href="${p.url}" target="_blank" rel="noopener">${p.title}</a>`
+          : p.title;
         html.push(`
           <div class="pub-card">
             <div class="pub-meta">
-              ${p.venue ? `<span class="badge ${bc}">${p.venue}</span>` : ''}
-              ${p.year  ? `<span class="badge badge-yellow">${p.year}</span>` : ''}
+              ${venue ? `<span class="badge ${badgeClass(venue)}">${venue}</span>` : ''}
             </div>
-            <p class="pub-title">${p.url
-              ? `<a href="${p.url}" target="_blank" rel="noopener">${p.title}</a>`
-              : p.title}</p>
-            <p class="pub-authors">${highlightSelf(p.authors)}</p>
-            ${(linkBtn || citeBtn) ? `<div class="pub-links">${linkBtn}${citeBtn}</div>` : ''}
+            <p class="pub-title">${titleHtml}</p>
+            <p class="pub-authors">${highlight(p.authors)}</p>
           </div>`);
-      }
-    }
+      });
+    });
     container.innerHTML = html.join('');
   }
 
   fetch('publications.json')
     .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
-    .then(renderPubs)
+    .then(render)
     .catch(err => {
-      container.innerHTML = `
-        <div class="pub-error">
-          <strong>Publications not loaded yet.</strong><br>
-          Run the GitHub Action <em>Fetch Publications from Google Scholar</em> once to
-          generate <code>publications.json</code>, or view the full list on
-          <a href="https://scholar.google.com/citations?user=30e95fEAAAAJ"
-             target="_blank" rel="noopener">Google Scholar</a>.<br>
-          <small style="opacity:.7;margin-top:.4rem;display:block">${err}</small>
-        </div>`;
+      container.innerHTML = `<div class="pub-error">
+        <strong>Could not load publications.json</strong><br>
+        <small>${err}</small>
+      </div>`;
     });
 })();
 </script>

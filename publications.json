@@ -1,0 +1,618 @@
+[
+  {
+    "title": "Grounded knowledge-enhanced medical vision–language pre-training for chest X-ray",
+    "authors": "Qiao Deng and Zhongzhen Huang and Yunqi Wang and Zhichuan Wang and Zhao Wang and Xiaofan Zhang and Qi Dou and Yeung Yu Hui and Edward S Hui",
+    "year": "2026",
+    "venue": "Biomedical Signal Processing and Control",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1746809425009279",
+    "venue_abbr": "BSPC"
+  },
+  {
+    "title": "GuideGen: A Text-Guided Framework for Paired Full-torso Anatomy and CT Volume Generation",
+    "authors": "Linrui Dai and Rongzhao Zhang and Yongrui Yu and Xiaofan Zhang",
+    "year": "2026",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37344",
+    "venue_abbr": "AAAI"
+  },
+  {
+    "title": "CT-Flow: Orchestrating CT Interpretation Workflow with Model Context Protocol Servers",
+    "authors": "Yannian Gu and Xizhuo Zhang and Linjie Mu and Yongrui Yu and Zhongzhen Huang and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2026",
+    "venue": "arXiv preprint arXiv:2603.00123",
+    "url": "https://arxiv.org/abs/2603.00123",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "EHRWorld: A Patient-Centric Medical World Model for Long-Horizon Clinical Trajectories",
+    "authors": "Linjie Mu and Zhongzhen Huang and Yannian Gu and Shengqian Qin and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2026",
+    "venue": "arXiv preprint arXiv:2602.03569",
+    "url": "https://arxiv.org/abs/2602.03569",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "MedMCP-Calc: Benchmarking LLMs for Realistic Medical Calculator Scenarios via MCP Integration",
+    "authors": "Yakun Zhu and Yutong Huang and Shengqian Qin and Zhongzhen Huang and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2026",
+    "venue": "arXiv preprint arXiv:2601.23049",
+    "url": "https://arxiv.org/abs/2601.23049",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Concepts from Representations: Post-hoc Concept Bottleneck Models via Sparse Decomposition of Visual Representations",
+    "authors": "Shizhan Gong and Xiaofan Zhang and Qi Dou",
+    "year": "2026",
+    "venue": "arXiv preprint arXiv:2601.12303",
+    "url": "https://arxiv.org/abs/2601.12303",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "MedLSAM: Localize and segment anything model for 3D CT images",
+    "authors": "Wenhui Lei and Xu Wei and Kang Li and Xiaofan Zhang and Shaoting Zhang",
+    "year": "2025",
+    "venue": "Medical Image Analysis",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1361841524002950",
+    "venue_abbr": "MedIA"
+  },
+  {
+    "title": "Mix-of-granularity: Optimize the chunking granularity for retrieval-augmented generation",
+    "authors": "Zijie Zhong and Hanwen Liu and Xiaoya Cui and Xiaofan Zhang and Zengchang Qin",
+    "year": "2025",
+    "venue": "",
+    "url": "https://aclanthology.org/2025.coling-main.384/",
+    "venue_abbr": "COLING"
+  },
+  {
+    "title": "O1 Replication Journey--Part 3: Inference-time Scaling for Medical Reasoning",
+    "authors": "Zhongzhen Huang and Gui Geng and Shengyi Hua and Zhen Huang and Haoyang Zou and Shaoting Zhang and Pengfei Liu and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "arXiv preprint arXiv:2501.06458",
+    "url": "https://arxiv.org/abs/2501.06458",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Synthet2c: Generating synthetic data for fine-tuning large language models on the text2cypher task",
+    "authors": "Ziije Zhong and Linqing Zhong and Zhaoze Sun and Qingyun Jin and Zengchang Qin and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "",
+    "url": "https://aclanthology.org/2025.coling-main.46/",
+    "venue_abbr": "COLING"
+  },
+  {
+    "title": "MeNTi: Bridging medical calculator and LLM agent with nested tool calling",
+    "authors": "Yakun Zhu and Shaohang Wei and Xu Wang and Kui Xue and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "",
+    "url": "https://aclanthology.org/2025.naacl-long.263/",
+    "venue_abbr": "NAACL"
+  },
+  {
+    "title": "Towards fair decentralized benchmarking of healthcare AI algorithms with the Federated Tumor Segmentation (FeTS) challenge",
+    "authors": "Maximilian Zenk and Ujjwal Baid and Sarthak Pati and Akis Linardos and Brandon Edwards and Micah Sheller and Patrick Foley and Alejandro Aristizabal and David Zimmerer and Alexey Gruzdev and Jason Martin and Russell T Shinohara and Annika Reinke and Fabian Isensee and Santhosh Parampottupadam and Kaushal Parekh and Ralf Floca and Hasan Kassem and Bhakti Baheti and Siddhesh Thakur and Verena Chung and Kaisar Kushibar and Karim Lekadir and Meirui Jiang and Youtan Yin and Hongzheng Yang and Quande Liu and Cheng Chen and Qi Dou and Pheng-Ann Heng and Xiaofan Zhang and Shaoting Zhang and Muhammad Irfan Khan and Mohammad Ayyaz Azeem and Mojtaba Jafaritadi and Esa Alhoniemi and Elina Kontio and Suleiman A Khan and Leon Mächler and Ivan Ezhov and Florian Kofler and Suprosanna Shit and Johannes C Paetzold and Timo Loehr and Benedikt Wiestler and Himashi Peiris and Kamlesh Pawar and Shenjun Zhong and Zhaolin Chen and Munawar Hayat and Gary Egan and Mehrtash Harandi and Ece Isik Polat and Gorkem Polat and Altan Kocyigit and Alptekin Temizel and Anup Tuladhar and Lakshay Tyagi and Raissa Souza and Nils D Forkert and Pauline Mouches and Matthias Wilms and Vishruth Shambhat and Akansh Maurya and Shubham Subhas Danannavar and Rohit Kalla and Vikas Kumar Anand and Ganapathy Krishnamurthi and Sahil Nalawade and Chandan Ganesh and Ben Wagner and Divya Reddy and Yudhajit Das and Fang F Yu and Baowei Fei and Ananth J Madhuranthakam and Joseph Maldjian and Gaurav Singh and Jianxun Ren and Wei Zhang and Ning An and Qingyu Hu and Youjia Zhang and Ying Zhou and Vasilis Siomos and Giacomo Tarroni and Jonathan Passerrat-Palmbach and Ambrish Rawat and Giulio Zizzo and Swanand Ravindra Kadhe and Jonathan P Epperlein and Stefano Braghin and Yuan Wang and Renuga Kanagavelu and Qingsong Wei and Yechao Yang and Yong Liu and Krzysztof Kotowski and Szymon Adamski and Bartosz Machura and Wojciech Malara and Lukasz Zarudzki and Jakub Nalepa and Yaying Shi and Hongjian Gao and Salman Avestimehr and Yonghong Yan and Agus S Akbar and Ekaterina Kondrateva and Hua Yang and Zhaopei Li and Hung-Yu Wu and Johannes Roth and Camillo Saueressig and Alexandre Milesi and Quoc D Nguyen and Nathan J Gruenhagen and Tsung-Ming Huang and Jun Ma and Har Shwinder H Singh and Nai-Yu Pan and Dingwen Zhang and Ramy A Zeineldin and Michal Futrega and Yading Yuan and Gian Marco Conte and Xue Feng and Quan D Pham and Yong Xia and Zhifan Jiang and Huan Minh Luu and Mariia Dobko and Alexandre Carré and Bair Tuchinov and Hassan Mohy-ud-Din and Saruar Alam and Anup Singh and Nameeta Shah and Weichung Wang and Chiharu Sako and Michel Bilello and Satyam Ghodasara and Suyash Mohan and Christos Davatzikos and Evan Calabrese and Jeffrey Rudie and Javier Villanueva-Meyer and Soonmee Cha and Christopher Hess and John Mongan",
+    "year": "2025",
+    "venue": "Nature communications",
+    "url": "https://www.nature.com/articles/s41467-025-60466-1",
+    "venue_abbr": "Nature Commun."
+  },
+  {
+    "title": "Interactive evaluation for medical llms via task-oriented dialogue system",
+    "authors": "Ruoyu Liu and Kui Xue and Xiaofan Zhang and Shaoting Zhang",
+    "year": "2025",
+    "venue": "",
+    "url": "https://aclanthology.org/2025.coling-main.325/",
+    "venue_abbr": "COLING"
+  },
+  {
+    "title": "Medodyssey: A medical domain benchmark for long context evaluation up to 200k tokens",
+    "authors": "Yongqi Fan and Hongli Sun and Kui Xue and Xiaofan Zhang and Shaoting Zhang and Tong Ruan",
+    "year": "2025",
+    "venue": "",
+    "url": "https://aclanthology.org/2025.findings-naacl.3/",
+    "venue_abbr": "NAACL"
+  },
+  {
+    "title": "Surgical action planning with large language models",
+    "authors": "Mengya Xu and Zhongzhen Huang and Jie Zhang and Xiaofan Zhang and Qi Dou",
+    "year": "2025",
+    "venue": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-05114-1_54",
+    "venue_abbr": "MICCAI"
+  },
+  {
+    "title": "An llm-based framework for biomedical terminology normalization in social media via multi-agent collaboration",
+    "authors": "Yongqi Fan and Kui Xue and Zelin Li and Xiaofan Zhang and Tong Ruan",
+    "year": "2025",
+    "venue": "",
+    "url": "https://aclanthology.org/2025.coling-main.714/",
+    "venue_abbr": "COLING"
+  },
+  {
+    "title": "A data-efficient pan-tumor foundation model for oncology ct interpretation",
+    "authors": "Wenhui Lei and Hanyu Chen and Zitian Zhang and Luyang Luo and Qiong Xiao and Yannian Gu and Peng Gao and Yankai Jiang and Ci Wang and Guangtao Wu and Tongjia Xu and Yingjie Zhang and Xiaofan Zhang and Pranav Rajpurkar and Shaoting Zhang and Zhenning Wang",
+    "year": "2025",
+    "venue": "arXiv e-prints",
+    "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv250206171L/abstract",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Pathorchestra: A comprehensive foundation model for computational pathology with over 100 diverse clinical-grade tasks",
+    "authors": "Fang Yan and Jianfeng Wu and Jiawen Li and Wei Wang and Yirong Chen and Linda Wei and Jiaxuan Lu and Wen Chen and Zizhao Gao and Jianan Li and Heng Li and Hong Yan and Jiabo Ma and Minda Chen and Yang Lu and Qing Chen and Yizhi Wang and Xitong Ling and Xuenian Wang and Zihan Wang and Qiang Huang and Shengyi Hua and Mianxin Liu and Lei Ma and Tian Shen and Xiaofan Zhang and Yonghong He and Hao Chen and Shaoting Zhang and Zhe Wang",
+    "year": "2025",
+    "venue": "npj Digital Medicine",
+    "url": "https://www.nature.com/articles/s41746-025-02027-w",
+    "venue_abbr": "npj Digit. Med."
+  },
+  {
+    "title": "Unleashing the Potential of Vision-Language Pre-Training for 3D Zero-Shot Lesion Segmentation via Mask-Attribute Alignment",
+    "authors": "Yankai Jiang and Wenhui Lei and Xiaofan Zhang and Shaoting Zhang",
+    "year": "2025",
+    "venue": "In The Thirteenth International Conference on Learning Representations",
+    "url": "https://arxiv.org/abs/2410.15744",
+    "venue_abbr": "ICLR"
+  },
+  {
+    "title": "Maxillofacial bone movements-aware dual graph convolution approach for postoperative facial appearance prediction",
+    "authors": "Xinrui Huang and Dongming He and Zhenming Li and Xiaofan Zhang and Xudong Wang",
+    "year": "2025",
+    "venue": "Medical Image Analysis",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1361841524002755",
+    "venue_abbr": "MedIA"
+  },
+  {
+    "title": "Meta-Tool: Unleash Open-World Function Calling Capabilities of General-Purpose Large Language Models",
+    "authors": "Shengqian Qin and Yakun Zhu and Linjie Mu and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "",
+    "url": "https://aclanthology.org/2025.acl-long.1481/",
+    "venue_abbr": "ACL"
+  },
+  {
+    "title": "DiagnosisArena: benchmarking diagnostic reasoning for large language models",
+    "authors": "Yakun Zhu and Zhongzhen Huang and Linjie Mu and Yutong Huang and Wei Nie and Jiaji Liu and Shaoting Zhang and Pengfei Liu and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "arXiv preprint arXiv:2505.14107",
+    "url": "https://arxiv.org/abs/2505.14107",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Elicit and enhance: Advancing multimodal reasoning in medical scenarios",
+    "authors": "Zhongzhen Huang and Linjie Mu and Yakun Zhu and Xiangyu Zhao and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "arXiv preprint arXiv:2505.23118",
+    "url": "https://arxiv.org/abs/2505.23118",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Mmxu: A multi-modal and multi-x-ray understanding dataset for disease progression",
+    "authors": "Linjie Mu and Zhongzhen Huang and Shengqian Qin and Yakun Zhu and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "",
+    "url": "https://aclanthology.org/2025.findings-acl.508/",
+    "venue_abbr": "ACL"
+  },
+  {
+    "title": "LesionDiffusion: Towards Text-Controlled General Lesion Synthesis",
+    "authors": "Wenhui Lei and Hengrui Tian and Linrui Dai and Hanyu Chen and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-04971-1_31",
+    "venue_abbr": "MICCAI"
+  },
+  {
+    "title": "Concepts from Neurons: Building Interpretable Medical Image Diagnostic Models by Dissecting Opaque Neural Networks",
+    "authors": "Shizhan Gong and Huayu Wang and Xiaofan Zhang and Qi Dou",
+    "year": "2025",
+    "venue": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-96625-5_1",
+    "venue_abbr": "MICCAI"
+  },
+  {
+    "title": "Towards Generalist Intelligence in Dentistry: Vision Foundation Models for Oral and Maxillofacial Radiology",
+    "authors": "Xinrui Huang and Fan Xiao and Dongming He and Anqi Gao and Dandan Li and Xiaofan Zhang and Shaoting Zhang and Xudong Wang",
+    "year": "2025",
+    "venue": "arXiv preprint arXiv:2510.14532",
+    "url": "https://arxiv.org/abs/2510.14532",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Interactive Segmentation and Report Generation for CT Images",
+    "authors": "Yannian Gu and Wenhui Lei and Hanyu Chen and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-04971-1_26",
+    "venue_abbr": "MICCAI"
+  },
+  {
+    "title": "PathFound: An Agentic Multimodal Model Activating Evidence-seeking Pathological Diagnosis",
+    "authors": "Shengyi Hua and Jianfeng Wu and Tianle Shen and Kangzhe Hu and Zhongzhen Huang and Shujuan Ni and Zhihong Zhang and Yuan Li and Zhe Wang and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "arXiv preprint arXiv:2512.23545",
+    "url": "https://arxiv.org/abs/2512.23545",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Mesenteric Vasculature Guided Segmentation of Metastatic Lymph Nodes in Colorectal Cancer",
+    "authors": "Yongrui Yu and Linrui Dai and Hanyu Chen and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11356054/",
+    "venue_abbr": "ISBI"
+  },
+  {
+    "title": "CP-Env: Evaluating Large Language Models on Clinical Pathways in a Controllable Hospital Environment",
+    "authors": "Yakun Zhu and Zhongzhen Huang and Qianhan Feng and Linjie Mu and Yannian Gu and Shaoting Zhang and Qi Dou and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "arXiv preprint arXiv:2512.10206",
+    "url": "https://arxiv.org/abs/2512.10206",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Radiologist Copilot: An Agentic Assistant with Orchestrated Tools for Radiology Reporting with Quality Control",
+    "authors": "Yongrui Yu and Zhongzhen Huang and Linjie Mu and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2025",
+    "venue": "arXiv preprint arXiv:2512.02814",
+    "url": "https://arxiv.org/abs/2512.02814",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Usfm: A universal ultrasound foundation model generalized to tasks and organs towards label efficient image analysis",
+    "authors": "Jing Jiao and Jin Zhou and Xiaokang Li and Menghua Xia and Yi Huang and Lihong Huang and Na Wang and Xiaofan Zhang and Shichong Zhou and Yuanyuan Wang and Yi Guo",
+    "year": "2024",
+    "venue": "Medical image analysis",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1361841524001270",
+    "venue_abbr": "MedIA"
+  },
+  {
+    "title": "PathoDuet: foundation models for pathological slide analysis of H&E and IHC stains",
+    "authors": "Shengyi Hua and Fang Yan and Tianle Shen and Lei Ma and Xiaofan Zhang",
+    "year": "2024",
+    "venue": "Medical Image Analysis",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1361841524002147",
+    "venue_abbr": "MedIA"
+  },
+  {
+    "title": "Medbench: A comprehensive, standardized, and reliable benchmarking system for evaluating chinese medical large language models",
+    "authors": "Mianxin Liu and Weiguo Hu and Jinru Ding and Jie Xu and Xiaoyang Li and Lifeng Zhu and Zhian Bai and Xiaoming Shi and Benyou Wang and Haitao Song and Pengfei Liu and Xiaofan Zhang and Shanshan Wang and Kang Li and Haofen Wang and Tong Ruan and Xuanjing Huang and Xin Sun and Shaoting Zhang",
+    "year": "2024",
+    "venue": "Big Data Mining and Analytics",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10778138/",
+    "venue_abbr": "BDMA"
+  },
+  {
+    "title": "Medical dialogue system: A survey of categories, methods, evaluation and challenges",
+    "authors": "Xiaoming Shi and Zeming Liu and Li Du and Yuxuan Wang and Hongru Wang and Yuhang Guo and Tong Ruan and Jie Xu and Xiaofan Zhang and Shaoting Zhang",
+    "year": "2024",
+    "venue": "",
+    "url": "https://aclanthology.org/2024.findings-acl.167/",
+    "venue_abbr": "ACL"
+  },
+  {
+    "title": "Zept: Zero-shot pan-tumor segmentation via query-disentangling and self-prompting",
+    "authors": "Yankai Jiang and Zhongzhen Huang and Rongzhao Zhang and Xiaofan Zhang and Shaoting Zhang",
+    "year": "2024",
+    "venue": "",
+    "url": "http://openaccess.thecvf.com/content/CVPR2024/html/Jiang_ZePT_Zero-Shot_Pan-Tumor_Segmentation_via_Query-Disentangling_and_Self-Prompting_CVPR_2024_paper.html",
+    "venue_abbr": "CVPR"
+  },
+  {
+    "title": "Cat: Coordinating anatomical-textual prompts for multi-organ and tumor segmentation",
+    "authors": "Zhongzhen Huang and Yankai Jiang and Rongzhao Zhang and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2024",
+    "venue": "Advances in Neural Information Processing Systems",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/06a52a54c8ee03cd86771136bc91eb1f-Abstract-Conference.html",
+    "venue_abbr": "NeurIPS"
+  },
+  {
+    "title": "Artificial intelligence-based assessment of PD-L1 expression in diffuse large B cell lymphoma",
+    "authors": "Fang Yan and Qian Da and Hongmei Yi and Shijie Deng and Lifeng Zhu and Mu Zhou and Yingting Liu and Ming Feng and Jing Wang and Xuan Wang and Yuxiu Zhang and Wenjing Zhang and Xiaofan Zhang and Jingsheng Lin and Shaoting Zhang and Chaofu Wang",
+    "year": "2024",
+    "venue": "NPJ Precision Oncology",
+    "url": "https://www.nature.com/articles/s41698-024-00577-y",
+    "venue_abbr": "npj Precis. Oncol."
+  },
+  {
+    "title": "Deblurring masked image modeling for ultrasound image analysis",
+    "authors": "Qingbo Kang and Qicheng Lao and Jun Gao and Jingyan Liu and Huahui Yi and Buyun Ma and Xiaofan Zhang and Kang Li",
+    "year": "2024",
+    "venue": "Medical Image Analysis",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1361841524001816",
+    "venue_abbr": "MedIA"
+  },
+  {
+    "title": "Openmedlab: An open-source platform for multi-modality foundation models in medicine",
+    "authors": "Xiaosong Wang and Xiaofan Zhang and Guotai Wang and Junjun He and Zhongyu Li and Wentao Zhu and Yi Guo and Qi Dou and Xiaoxiao Li and Dequan Wang and Liang Hong and Qicheng Lao and Tong Ruan and Yukun Zhou and Yixue Li and Jie Zhao and Kang Li and Xin Sun and Lifeng Zhu and Shaoting Zhang",
+    "year": "2024",
+    "venue": "arXiv preprint arXiv:2402.18028",
+    "url": "https://arxiv.org/abs/2402.18028",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Pathotune: Adapting visual foundation model to pathological specialists",
+    "authors": "Jiaxuan Lu and Fang Yan and Xiaofan Zhang and Yue Gao and Shaoting Zhang",
+    "year": "2024",
+    "venue": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-72083-3_37",
+    "venue_abbr": "MICCAI"
+  },
+  {
+    "title": "Meddiff-fm: A diffusion-based foundation model for versatile medical image applications",
+    "authors": "Yongrui Yu and Yannian Gu and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2024",
+    "venue": "arXiv preprint arXiv:2410.15432",
+    "url": "https://arxiv.org/abs/2410.15432",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Tool calling: Enhancing medication consultation via retrieval-augmented large language models",
+    "authors": "Zhongzhen Huang and Kui Xue and Yongqi Fan and Linjie Mu and Ruoyu Liu and Tong Ruan and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2024",
+    "venue": "arXiv preprint arXiv:2404.17897",
+    "url": "https://arxiv.org/abs/2404.17897",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Evolution of the “Internet Plus Health Care” mode enabled by artificial intelligence: Development and application of an outpatient triage system",
+    "authors": "Lingrui Yang and Jiali Pang and Song Zuo and Jian Xu and Wei Jin and Feng Zuo and Kui Xue and Zhongzhou Xiao and Xinwei Peng and Jie Xu and Xiaofan Zhang and Ruiyao Chen and Shuqing Luo and Shaoting Zhang and Xin Sun",
+    "year": "2024",
+    "venue": "Journal of medical Internet research",
+    "url": "https://www.jmir.org/2024/1/e51711/",
+    "venue_abbr": "JMIR"
+  },
+  {
+    "title": "Incorporating clinical guidelines through adapting multi-modal large language model for prostate cancer PI-RADS scoring",
+    "authors": "Tiantian Zhang and Manxi Lin and Hongda Guo and Xiaofan Zhang and Ka Fung Peter Chiu and Aasa Feragen and Qi Dou",
+    "year": "2024",
+    "venue": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-72086-4_34",
+    "venue_abbr": "MICCAI"
+  },
+  {
+    "title": "Iossam: Label efficient multi-view prompt-driven tooth segmentation",
+    "authors": "Xinrui Huang and Dongming He and Zhenming Li and Xiaofan Zhang and Xudong Wang",
+    "year": "2024",
+    "venue": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-72378-0_59",
+    "venue_abbr": "MICCAI"
+  },
+  {
+    "title": "GuideGen: A Text-Guided Framework for Full-torso Anatomy and CT Volume Generation",
+    "authors": "Linrui Dai and Rongzhao Zhang and Yongrui Yu and Xiaofan Zhang",
+    "year": "2024",
+    "venue": "arXiv e-prints",
+    "url": "https://ui.adsabs.harvard.edu/abs/2024arXiv240307247D/abstract",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "GECSum: Generative evaluation-driven sequence level contrastive learning for abstractive summarization",
+    "authors": "Jiawen Xie and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2024",
+    "venue": "",
+    "url": "https://aclanthology.org/2024.lrec-main.670/",
+    "venue_abbr": "COLING"
+  },
+  {
+    "title": "Modality-Aware and Shift Mixer for Multi-modal Brain Tumor Segmentation",
+    "authors": "Zhongzhen Huang and Linda Wei and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2024",
+    "venue": "arXiv preprint arXiv:2403.02074",
+    "url": "https://arxiv.org/abs/2403.02074",
+    "venue_abbr": "arXiv"
+  },
+  {
+    "title": "Kiut: Knowledge-injected u-transformer for radiology report generation",
+    "authors": "Zhongzhen Huang and Xiaofan Zhang and Shaoting Zhang",
+    "year": "2023",
+    "venue": "",
+    "url": "http://openaccess.thecvf.com/content/CVPR2023/html/Huang_KiUT_Knowledge-Injected_U-Transformer_for_Radiology_Report_Generation_CVPR_2023_paper.html",
+    "venue_abbr": "CVPR"
+  },
+  {
+    "title": "One-shot weakly-supervised segmentation in 3D medical images",
+    "authors": "Wenhui Lei and Qi Su and Tianyu Jiang and Ran Gu and Na Wang and Xinglong Liu and Guotai Wang and Xiaofan Zhang and Shaoting Zhang",
+    "year": "2023",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10183778/",
+    "venue_abbr": "TMI"
+  },
+  {
+    "title": "MidMed: Towards mixed-type dialogues for medical consultation",
+    "authors": "Xiaoming Shi and Zeming Liu and Chuan Wang and Haitao Leng and Kui Xue and Xiaofan Zhang and Shaoting Zhang",
+    "year": "2023",
+    "venue": "",
+    "url": "https://aclanthology.org/2023.acl-long.453/",
+    "venue_abbr": "ACL"
+  },
+  {
+    "title": "Alleviating exposure bias via multi-level contrastive learning and deviation simulation in abstractive summarization",
+    "authors": "Jiawen Xie and Qi Su and Shaoting Zhang and Xiaofan Zhang",
+    "year": "2023",
+    "venue": "",
+    "url": "https://aclanthology.org/2023.findings-acl.617/",
+    "venue_abbr": "ACL"
+  },
+  {
+    "title": "Hippocampus segmentation after brain tumor resection via postoperative region synthesis",
+    "authors": "Changjuan Tao and Difei Gu and Rui Huang and Ling Zhou and Zhiqiang Hu and Yuanyuan Chen and Xiaofan Zhang and Hongsheng Li",
+    "year": "2023",
+    "venue": "BMC Medical Imaging",
+    "url": "https://link.springer.com/article/10.1186/s12880-023-01087-2",
+    "venue_abbr": "BMC Med. Imaging"
+  },
+  {
+    "title": "Semi-supervised pulmonary airway segmentation with two-stage feature specialization mechanism",
+    "authors": "Difei Gu and Dexu Wang and Xiaofan Zhang and Hongsheng Li",
+    "year": "2023",
+    "venue": "",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10230329/",
+    "venue_abbr": "ISBI"
+  },
+  {
+    "title": "Efficient subclass segmentation in medical images",
+    "authors": "Linrui Dai and Wenhui Lei and Xiaofan Zhang",
+    "year": "2023",
+    "venue": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-43895-0_25",
+    "venue_abbr": "MICCAI"
+  },
+  {
+    "title": "Automatic lobe segmentation using attentive cross entropy and end-to-end fissure generation",
+    "authors": "Qi Su and Na Wang and Jiawen Xie and Yinan Chen and Xiaofan Zhang",
+    "year": "2023",
+    "venue": "",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10230800/",
+    "venue_abbr": "ISBI"
+  },
+  {
+    "title": "WORD: A large scale dataset, benchmark and clinical applicable study for abdominal organ segmentation from CT image",
+    "authors": "Xiangde Luo and Wenjun Liao and Jianghong Xiao and Jieneng Chen and Tao Song and Xiaofan Zhang and Kang Li and Dimitris N Metaxas and Guotai Wang and Shaoting Zhang",
+    "year": "2022",
+    "venue": "Medical Image Analysis",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1361841522002705",
+    "venue_abbr": "MedIA"
+  },
+  {
+    "title": "DigestPath: A benchmark dataset with challenge review for the pathological detection and segmentation of digestive-system",
+    "authors": "Qian Da and Xiaodi Huang and Zhongyu Li and Yanfei Zuo and Chenbin Zhang and Jingxin Liu and Wen Chen and Jiahui Li and Dou Xu and Zhiqiang Hu and Hongmei Yi and Yan Guo and Zhe Wang and Ling Chen and Li Zhang and Xianying He and Xiaofan Zhang and Ke Mei and Chuang Zhu and Weizeng Lu and Linlin Shen and Jun Shi and Jun Li and Ganapathy Krishnamurthi and Jiangcheng Yang and Tiancheng Lin and Qingyu Song and Xuechen Liu and Simon Graham and Raja Muhammad Saad Bashir and Canqian Yang and Shaofei Qin and Xinmei Tian and Baocai Yin and Jie Zhao and Dimitris N Metaxas and Hongsheng Li and Chaofu Wang and Shaoting Zhang",
+    "year": "2022",
+    "venue": "Medical image analysis",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1361841522001323",
+    "venue_abbr": "MedIA"
+  },
+  {
+    "title": "Contrastive semi-supervised learning for domain adaptive segmentation across similar anatomical structures",
+    "authors": "Ran Gu and Jingyang Zhang and Guotai Wang and Wenhui Lei and Tao Song and Xiaofan Zhang and Kang Li and Shaoting Zhang",
+    "year": "2022",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "url": "https://ieeexplore.ieee.org/abstract/document/9903480/",
+    "venue_abbr": "TMI"
+  },
+  {
+    "title": "Segmentation only uses sparse annotations: Unified weakly and semi-supervised learning in medical images",
+    "authors": "Feng Gao and Minhao Hu and Min-Er Zhong and Shixiang Feng and Xuwei Tian and Xiaochun Meng and Zeping Huang and Minyi Lv and Tao Song and Xiaofan Zhang and Xiaoguang Zou and Xiaojian Wu",
+    "year": "2022",
+    "venue": "Medical Image Analysis",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1361841522001621",
+    "venue_abbr": "MedIA"
+  },
+  {
+    "title": "Large-scale gastric cancer screening and localization using multi-task deep neural network",
+    "authors": "Hong Yu and Xiaofan Zhang and Lingjun Song and Liren Jiang and Xiaodi Huang and Wen Chen and Chenbin Zhang and Jiahui Li and Jiji Yang and Zhiqiang Hu and Qi Duan and Wanyuan Chen and Xianglei He and Jinshuang Fan and Weihai Jiang and Li Zhang and Chengmin Qiu and Minmin Gu and Weiwei Sun and Yangqiong Zhang and Guangyin Peng and Weiwei Shen and Guohui Fu",
+    "year": "2021",
+    "venue": "Neurocomputing",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0925231221003568",
+    "venue_abbr": "Neurocomputing"
+  },
+  {
+    "title": "Heterogeneous memory enhanced multimodal attention model for video question answering",
+    "authors": "Chenyou Fan and Xiaofan Zhang and Shu Zhang and Wensheng Wang and Chi Zhang and Heng Huang",
+    "year": "2019",
+    "venue": "",
+    "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Fan_Heterogeneous_Memory_Enhanced_Multimodal_Attention_Model_for_Video_Question_Answering_CVPR_2019_paper.html",
+    "venue_abbr": "CVPR"
+  },
+  {
+    "title": "Large-scale retrieval for medical image analytics: A comprehensive review",
+    "authors": "Zhongyu Li and Xiaofan Zhang and Henning Müller and Shaoting Zhang",
+    "year": "2018",
+    "venue": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/S136184151730138X",
+    "venue_abbr": "MedIA"
+  },
+  {
+    "title": "Embedding label structures for fine-grained feature representation",
+    "authors": "Xiaofan Zhang and Feng Zhou and Yuanqing Lin and Shaoting Zhang",
+    "year": "2016",
+    "venue": "",
+    "url": "http://openaccess.thecvf.com/content_cvpr_2016/html/Zhang_Embedding_Label_Structures_CVPR_2016_paper.html",
+    "venue_abbr": "CVPR"
+  },
+  {
+    "title": "Hashing-based large-scale medical image retrieval for computer-aided diagnosis",
+    "authors": "X Zhang and S Zhang",
+    "year": "2016",
+    "venue": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/B9780128040768000086",
+    "venue_abbr": "Book Ch."
+  },
+  {
+    "title": "High-throughput histopathological image analysis via robust cell segmentation and hashing",
+    "authors": "Xiaofan Zhang and Fuyong Xing and Hai Su and Lin Yang and Shaoting Zhang",
+    "year": "2015",
+    "venue": "Medical image analysis",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1361841515001474",
+    "venue_abbr": "MedIA"
+  },
+  {
+    "title": "Fusing heterogeneous features from stacked sparse autoencoder for histopathological image analysis",
+    "authors": "Xiaofan Zhang and Hang Dou and Tao Ju and Jun Xu and Shaoting Zhang",
+    "year": "2015",
+    "venue": "IEEE journal of biomedical and health informatics",
+    "url": "https://ieeexplore.ieee.org/abstract/document/7172448/",
+    "venue_abbr": "JBHI"
+  },
+  {
+    "title": "Fine-grained histopathological image analysis via robust segmentation and large-scale retrieval",
+    "authors": "Xiaofan Zhang and Hai Su and Lin Yang and Shaoting Zhang",
+    "year": "2015",
+    "venue": "",
+    "url": "http://openaccess.thecvf.com/content_cvpr_2015/html/Zhang_Fine-Grained_Histopathological_Image_2015_CVPR_paper.html",
+    "venue_abbr": "CVPR"
+  },
+  {
+    "title": "Weighted hashing with multiple cues for cell-level analysis of histopathological images",
+    "authors": "Xiaofan Zhang and Hai Su and Lin Yang and Shaoting Zhang",
+    "year": "2015",
+    "venue": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-319-19992-4_23",
+    "venue_abbr": "MICCAI"
+  },
+  {
+    "title": "Fusing heterogeneous features for the image-guided diagnosis of intraductal breast lesions",
+    "authors": "Xiaofan Zhang and Hang Dou and Tao Ju and Shaoting Zhang",
+    "year": "2015",
+    "venue": "",
+    "url": "https://ieeexplore.ieee.org/abstract/document/7164110/",
+    "venue_abbr": "ISBI"
+  },
+  {
+    "title": "Towards large-scale histopathological image analysis: Hashing-based image retrieval",
+    "authors": "Xiaofan Zhang and Wei Liu and Murat Dundar and Sunil Badve and Shaoting Zhang",
+    "year": "2014",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "url": "https://ieeexplore.ieee.org/abstract/document/6919336/",
+    "venue_abbr": "TMI"
+  },
+  {
+    "title": "Scalable mammogram retrieval using anchor graph hashing",
+    "authors": "Jingjing Liu and Shaoting Zhang and Wei Liu and Xiaofan Zhang and Dimitris N Metaxas",
+    "year": "2014",
+    "venue": "",
+    "url": "https://ieeexplore.ieee.org/abstract/document/6868016/",
+    "venue_abbr": "ISBI"
+  },
+  {
+    "title": "Mining histopathological images via composite hashing and online learning",
+    "authors": "Xiaofan Zhang and Lin Yang and Wei Liu and Hai Su and Shaoting Zhang",
+    "year": "2014",
+    "venue": "",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-319-10470-6_60",
+    "venue_abbr": "MICCAI"
+  },
+  {
+    "title": "Mining histopathological images via hashing-based scalable image retrieval",
+    "authors": "Xiaofan Zhang and Wei Liu and Shaoting Zhang",
+    "year": "2014",
+    "venue": "",
+    "url": "https://ieeexplore.ieee.org/abstract/document/6868069/",
+    "venue_abbr": "ISBI"
+  },
+  {
+    "title": "Color saliency model based on mean shift segmentation",
+    "authors": "Xu Liu and Zengchang Qin and Xiaofan Zhang and Tao Wan",
+    "year": "2013",
+    "venue": "",
+    "url": "https://ieeexplore.ieee.org/abstract/document/6638025/",
+    "venue_abbr": "ISBI"
+  }
+]
