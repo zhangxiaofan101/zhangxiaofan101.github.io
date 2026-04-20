@@ -36,7 +36,6 @@
   <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:1.8rem;">
     77 papers · sorted by year ·
     <a href="https://scholar.google.com/citations?user=30e95fEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-    · to update: edit <code style="font-size:0.85em; background:var(--mint-light); padding:0.1rem 0.35rem; border-radius:4px;">publications.json</code>
   </p>
 
   <div id="pub-container">
@@ -73,6 +72,18 @@
     return (authors || '').replace(/(Xiaofan Zhang)/gi, '<strong>$1</strong>');
   }
 
+  function formatAuthors(authors) {
+    if (!authors) return '';
+    const list = authors.split(' and ').map(a => a.trim()).filter(Boolean);
+    if (list.length <= 10) return highlight(list.join(', '));
+    const first5 = list.slice(0, 5);
+    const hasXF = list.some(a => /xiaofan zhang/i.test(a));
+    const xfInFirst5 = first5.some(a => /xiaofan zhang/i.test(a));
+    let shown = first5.join(', ');
+    if (hasXF && !xfInFirst5) shown += ', \u2026, Xiaofan Zhang';
+    return highlight(shown) + ', et al.';
+  }
+
   function render(pubs) {
     if (!pubs.length) { container.innerHTML = '<p>No publications found.</p>'; return; }
 
@@ -94,7 +105,7 @@
               ${venue ? `<span class="badge ${badgeClass(venue)}">${venue}</span>` : ''}
             </div>
             <p class="pub-title">${titleHtml}</p>
-            <p class="pub-authors">${highlight(p.authors)}</p>
+            <p class="pub-authors">${formatAuthors(p.authors)}</p>
           </div>`);
       });
     });
