@@ -6,6 +6,30 @@
 
 const NEWS = [
   {
+    date: "Apr 2026",
+    html: `2 papers accepted at <strong>ACL 2026</strong>: Medical Calculator and benchmarking diagnostic reasoning.`
+  },
+  {
+    date: "Feb 2026",
+    html: `Paper on pathology IHC accepted at <strong>CVPR 2026</strong>!`
+  },
+  {
+    date: "Nov 2025",
+    html: `A long-suffering paper finally accepted at <strong>AAAI 2026</strong>.`
+  },
+  {
+    date: "Sep 2025",
+    html: `PathOrchestra accepted at <strong>npj Digital Medicine</strong>!`
+  },
+  {
+    date: "May 2025",
+    html: `2 papers accepted at <strong>ACL 2025</strong> (one main, one findings); 3 papers accepted at <strong>MICCAI 2025</strong>!`
+  },
+  {
+    date: "Jan 2025",
+    html: `One paper accepted at <strong>NAACL 2025</strong> and one at <strong>ICLR 2025</strong>!`
+  },
+  {
     date: "Jan 2025",
     html: `O1 Replication Journey — Part 3: Inference-time Scaling for Medical Reasoning released! ^_^`
   },

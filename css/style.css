@@ -327,6 +327,18 @@ a:hover { text-decoration: underline; }
   border: 1.5px solid var(--border);
 }
 
+/* ── News expand button ───────────────────────────────── */
+.news-expand-btn {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--mint); border: 2px solid var(--mint-dark);
+  color: var(--mint-dark); font-size: 0.8rem;
+  display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer; box-shadow: 2px 2px 0 var(--mint-dark);
+  transition: background 0.18s, box-shadow 0.15s, transform 0.15s;
+}
+.news-expand-btn:hover { background: var(--mint-dark); color: #fff; transform: translateY(-1px); box-shadow: 3px 3px 0 var(--text); }
+
 /* ── Footer ───────────────────────────────────────────── */
 footer {
   text-align: center; padding: 2rem 1rem;

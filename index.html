@@ -79,6 +79,11 @@
   <h2 class="section-title"><span class="star">✦</span> News</h2>
   <div class="news-card">
     <ul id="news-list" style="list-style:none;"></ul>
+    <div id="news-toggle" style="display:none; text-align:center; padding-top:0.75rem;">
+      <button id="news-btn" class="news-expand-btn" aria-label="Toggle news">
+        <i class="fas fa-chevron-down"></i>
+      </button>
+    </div>
   </div>
 
 </main>
@@ -90,13 +95,32 @@
 <script src="js/news.js"></script>
 <script src="js/main.js"></script>
 <script>
+  const PREVIEW = 10;
   const ul = document.getElementById('news-list');
-  NEWS.forEach(item => {
+  const toggle = document.getElementById('news-toggle');
+  const btn = document.getElementById('news-btn');
+  let expanded = false;
+
+  const items = NEWS.map(item => {
     const li = document.createElement('li');
     li.className = 'news-item';
     li.innerHTML = `<span class="news-date">${item.date}</span><span>${item.html}</span>`;
     ul.appendChild(li);
+    return li;
   });
+
+  function applyVisibility() {
+    items.forEach((li, i) => {
+      li.style.display = (expanded || i < PREVIEW) ? '' : 'none';
+    });
+    btn.querySelector('i').className = expanded ? 'fas fa-chevron-up' : 'fas fa-chevron-down';
+  }
+
+  if (NEWS.length > PREVIEW) {
+    toggle.style.display = '';
+    btn.addEventListener('click', () => { expanded = !expanded; applyVisibility(); });
+  }
+  applyVisibility();
 </script>
 </body>
 </html>
