@@ -7,7 +7,7 @@
 const NEWS = [
   {
     date: "Apr 2026",
-    html: `2 papers accepted at <strong>ACL 2026</strong>: Medical Calculator and benchmarking diagnostic reasoning.`
+    html: `2 papers accepted at <strong>ACL 2026</strong>: medical calculators and a diagnostic reasoning benchmark.`
   },
   {
     date: "Feb 2026",
