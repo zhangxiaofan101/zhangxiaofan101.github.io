@@ -40,26 +40,160 @@
   </h2>
 
   <p class="project-overview">
-    We design medical AI agents capable of tool use, multi-step reasoning,
-    and autonomous decision pipelines — from diagnostic calculators to
-    benchmarking clinical reasoning across complex cases.
+    Clinical decision-making demands more than pattern recognition — it requires tool use,
+    multi-step reasoning, and the ability to integrate heterogeneous information across a patient journey.
+    We build medical AI agents that call specialized tools, reason through complex diagnostic workflows,
+    and operate reliably in realistic clinical settings.
   </p>
 
-  <!-- ── Paper entries ── -->
+  <!-- Overview figure -->
+  <div class="project-overview-fig">
+    <img src="../img/projects/medical-agents/overview.jpg" alt="Medical agents project overview"
+         onerror="this.parentElement.style.display='none'">
+  </div>
+
+  <!-- ── Tool Use ─────────────────────────────────────────── -->
+  <p class="paper-group-heading">Tool Use</p>
 
   <div class="paper-entry">
-    <img src="../img/projects/medical-agents/paper1.png" alt="" class="paper-figure"
+    <img src="../img/projects/medical-agents/metatool.jpg" alt="" class="paper-figure"
          onerror="this.style.display='none'">
     <div class="paper-content">
       <p class="paper-entry-title">
-        <a href="#" target="_blank" rel="noopener">Paper Title Placeholder</a>
+        <a href="https://aclanthology.org/2025.acl-long.1481/" target="_blank" rel="noopener">
+          Meta-Tool: Unleash Open-World Function Calling Capabilities of General-Purpose Large Language Models
+        </a>
       </p>
-      <p class="paper-entry-authors">Authors · <em>Venue Year</em></p>
+      <p class="paper-entry-authors"><em>ACL, 2025</em></p>
       <p class="paper-entry-desc">
-        Brief description of the contribution and key results.
+        A framework that equips general-purpose LLMs with open-world function calling,
+        enabling them to discover, select, and invoke tools beyond a fixed predefined set —
+        a critical capability for medical agents operating in dynamic clinical environments.
       </p>
     </div>
   </div>
+
+  <div class="paper-entry">
+    <img src="../img/projects/medical-agents/menti.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://aclanthology.org/2025.naacl-long.263/" target="_blank" rel="noopener">
+          MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>NAACL, 2025</em></p>
+      <p class="paper-entry-desc">
+        Connects LLM agents with clinical medical calculators through a nested tool-calling
+        mechanism, allowing agents to invoke multi-step calculator pipelines as part of
+        complex clinical reasoning chains.
+      </p>
+    </div>
+  </div>
+
+  <div class="paper-entry">
+    <img src="../img/projects/medical-agents/medmcp.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://arxiv.org/abs/2601.23049" target="_blank" rel="noopener">
+          MedMCP-Calc: Benchmarking LLMs for Realistic Medical Calculator Scenarios via MCP Integration
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>ACL, 2026</em></p>
+      <p class="paper-entry-desc">
+        A benchmark that evaluates LLMs on realistic medical calculator scenarios through
+        Model Context Protocol integration, probing the ability to select the right calculator,
+        extract required parameters, and interpret results in clinical context.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── Reasoning ───────────────────────────────────────── -->
+  <p class="paper-group-heading">Reasoning</p>
+
+  <div class="paper-entry">
+    <img src="../img/projects/medical-agents/o1.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://arxiv.org/abs/2501.06458" target="_blank" rel="noopener">
+          O1 Replication Journey — Part 3: Inference-time Scaling for Medical Reasoning
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>arXiv, 2025</em></p>
+      <p class="paper-entry-desc">
+        Investigates inference-time compute scaling for medical reasoning,
+        replicating and extending OpenAI o1-style chain-of-thought strategies
+        to complex clinical question answering and diagnostic tasks.
+      </p>
+    </div>
+  </div>
+
+  <div class="paper-entry">
+    <img src="../img/projects/medical-agents/diag-arena.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://arxiv.org/abs/2505.14107" target="_blank" rel="noopener">
+          DiagnosisArena: Benchmarking Diagnostic Reasoning for Large Language Models
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>ACL, 2026</em></p>
+      <p class="paper-entry-desc">
+        A comprehensive benchmark for evaluating LLM diagnostic reasoning across diverse
+        clinical specialties, testing multi-step differential diagnosis, evidence integration,
+        and alignment with clinical guidelines.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── Multi-agent Applications ───────────────────────── -->
+  <p class="paper-group-heading">Multi-agent Applications</p>
+
+  <div class="paper-entry">
+    <img src="../img/projects/medical-agents/gi-agents.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        GI-AgentX: A Multi-modal Agentic System for Gastrointestinal Cancer
+      </p>
+      <p class="paper-entry-authors"><em>Manuscript in preparation</em></p>
+      <p class="paper-entry-desc">
+        The first agentic system for unified patient-journey care of gastrointestinal cancer.
+        GI-AgentX integrates an LLM-based scheduler agent for orchestration, planning, and recommendation;
+        three dedicated vision agents for multimodal image analysis; and a retrieval-augmented generation
+        module for guideline invocation and evidence grounding.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── World Models ────────────────────────────────────── -->
+  <p class="paper-group-heading">World Models</p>
+
+  <div class="paper-entry">
+    <img src="../img/projects/medical-agents/ehr-world.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://arxiv.org/abs/2602.03569" target="_blank" rel="noopener">
+          EHRWorld: A Patient-Centric Medical World Model for Long-Horizon Clinical Trajectories
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>arXiv, 2025</em></p>
+      <p class="paper-entry-desc">
+        A patient-centric world model built on electronic health records that simulates
+        long-horizon clinical trajectories, enabling agents to plan, predict, and reason
+        about patient outcomes over extended time horizons.
+      </p>
+    </div>
+  </div>
+
+  <p style="font-size:0.9rem; color:var(--text-muted); margin-top:1.5rem; font-style:italic;">
+    Agentic AI is a central focus of our lab right now — we are actively working on
+    memory, skills, and world models for medical agents, as well as building benchmarks
+    to rigorously evaluate agent capabilities in clinical settings. More coming soon.
+  </p>
 
 </main>
 
