@@ -24,6 +24,19 @@
   --purple:       #ede9fe;
   --purple-dark:  #6d28d9;
 
+  /* Project tag palette (distinct from venue badges) */
+  --orange:         #ffedd5;
+  --orange-dark:    #c2410c;
+
+  --indigo:         #e0e7ff;
+  --indigo-dark:    #4338ca;
+
+  --lime:           #ecfccb;
+  --lime-dark:      #4d7c0f;
+
+  --sky:            #e0f2fe;
+  --sky-dark:       #0369a1;
+
   /* Text */
   --text:         #14342a;
   --text-muted:   #5c7d6e;
@@ -221,6 +234,12 @@ a:hover { text-decoration: underline; }
 .badge-red    { background: var(--red);        color: var(--red-dark); }
 .badge-purple { background: var(--purple);     color: var(--purple-dark); }
 
+/* Project tag badges */
+.badge-pathology     { background: var(--orange); color: var(--orange-dark); }
+.badge-large-models  { background: var(--indigo); color: var(--indigo-dark); }
+.badge-agents        { background: var(--lime);   color: var(--lime-dark); }
+.badge-applications  { background: var(--sky);    color: var(--sky-dark); }
+
 /* ── Publication cards ────────────────────────────────── */
 .pub-card {
   background: var(--surface2);
@@ -369,6 +388,20 @@ a:hover { text-decoration: underline; }
 @media (max-width: 640px) {
   .paper-figure { max-height: 200px; }
 }
+
+/* ── Project closing note ─────────────────────────────── */
+.project-note {
+  font-family: 'Caveat', cursive;
+  font-size: 1.05rem; font-weight: 600;
+  color: var(--mint-dark);
+  background: var(--mint-light);
+  border: 2px dashed var(--mint);
+  border-radius: 10px 16px 12px 14px / 14px 10px 16px 12px;
+  padding: 0.75rem 1.2rem;
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+.project-note a { color: var(--mint-dark); text-decoration: underline; }
 
 /* ── Teaching ─────────────────────────────────────────── */
 .teaching-block {

@@ -36,30 +36,103 @@
 
   <h2 class="section-title" style="margin-top:0.8rem;">
     <span class="star">✦</span> Multi-modality Clinical Decision Making
-    <span class="badge badge-red" style="font-size:0.8rem; vertical-align:middle;">Applications</span>
+    <span class="badge badge-applications" style="font-size:0.8rem; vertical-align:middle;">Applications</span>
   </h2>
 
   <p class="project-overview">
-    We combine imaging, clinical text, and structured records to build
-    explainable multi-modal systems for real-world clinical decision support,
-    with a focus on reliability and interpretability.
+    We apply AI to real clinical problems — from surgical planning and radiology reporting
+    to disease progression tracking and postoperative outcome prediction.
+    These projects span multiple modalities and specialties, with a shared emphasis on
+    practical utility and clinical interpretability.
   </p>
 
-  <!-- ── Paper entries ── -->
+  <!-- Overview figure -->
+  <div class="project-overview-fig">
+    <img src="../img/projects/applications/overview.jpg" alt="Applications project overview"
+         onerror="this.parentElement.style.display='none'">
+  </div>
 
   <div class="paper-entry">
-    <img src="../img/projects/applications/paper1.png" alt="" class="paper-figure"
+    <img src="../img/projects/applications/maxillofacial.jpg" alt="" class="paper-figure"
          onerror="this.style.display='none'">
     <div class="paper-content">
       <p class="paper-entry-title">
-        <a href="#" target="_blank" rel="noopener">Paper Title Placeholder</a>
+        <a href="https://www.sciencedirect.com/science/article/pii/S1361841524002755" target="_blank" rel="noopener">
+          Maxillofacial Bone Movements-aware Dual Graph Convolution Approach for Postoperative Facial Appearance Prediction
+        </a>
       </p>
-      <p class="paper-entry-authors">Authors · <em>Venue Year</em></p>
+      <p class="paper-entry-authors"><em>Medical Image Analysis, 2025</em></p>
       <p class="paper-entry-desc">
-        Brief description of the contribution and key results.
+        A dual graph convolution network that models bone movement relationships to predict
+        postoperative facial appearance from preoperative CT, supporting surgical planning
+        for orthognathic and maxillofacial procedures.
       </p>
     </div>
   </div>
+
+  <div class="paper-entry">
+    <img src="../img/projects/applications/report.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="http://openaccess.thecvf.com/content/CVPR2023/html/Huang_KiUT_Knowledge-Injected_U-Transformer_for_Radiology_Report_Generation_CVPR_2023_paper.html" target="_blank" rel="noopener">
+          KiUT: Knowledge-injected U-Transformer for Radiology Report Generation
+        </a>
+        &nbsp;·&nbsp;
+        <a href="https://link.springer.com/chapter/10.1007/978-3-032-04971-1_26" target="_blank" rel="noopener">
+          Interactive Segmentation and Report Generation for CT Images
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>CVPR 2023 &nbsp;·&nbsp; MICCAI 2025</em></p>
+      <p class="paper-entry-desc">
+        Two complementary works on automated radiology reporting: KiUT injects structured
+        medical knowledge into a U-shaped transformer for higher-quality report generation,
+        while the interactive segmentation work couples region-level visual grounding
+        with report generation for CT images.
+      </p>
+    </div>
+  </div>
+
+  <div class="paper-entry">
+    <img src="../img/projects/applications/mmxu.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://aclanthology.org/2025.findings-acl.508/" target="_blank" rel="noopener">
+          MMXU: A Multi-modal and Multi-X-ray Understanding Dataset for Disease Progression
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>ACL Findings, 2025</em></p>
+      <p class="paper-entry-desc">
+        A large-scale multimodal dataset pairing longitudinal X-ray series with clinical
+        text, designed to benchmark disease progression understanding — a task that requires
+        models to reason about change over time across both image and language modalities.
+      </p>
+    </div>
+  </div>
+
+  <div class="paper-entry">
+    <img src="../img/projects/applications/surgical.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://link.springer.com/chapter/10.1007/978-3-032-05114-1_54" target="_blank" rel="noopener">
+          Surgical Action Planning with Large Language Models
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>MICCAI, 2025</em></p>
+      <p class="paper-entry-desc">
+        Leverages LLMs to generate structured surgical action plans from preoperative
+        information, providing step-by-step procedural guidance that can assist surgeons
+        in preparation and intraoperative decision support.
+      </p>
+    </div>
+  </div>
+
+  <p class="project-note">
+    ✦ We welcome collaborations with clinicians and medical institutions on applied AI projects.
+    If you are interested in working with us, feel free to <a data-email href="#">get in touch</a>.
+  </p>
 
 </main>
 

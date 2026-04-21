@@ -55,6 +55,91 @@
 (function () {
   const container = document.getElementById('pub-container');
 
+  // Project tag mapping — [title substring (lowercase), project key]
+  const PROJECT_MAP = [
+    // Pathology
+    ['pathorchestra',                                    'pathology'],
+    ['pathfound',                                        'pathology'],
+    ['pathoduet',                                        'pathology'],
+    ['pd-l1 expression',                                 'pathology'],
+    ['pathotune',                                        'pathology'],
+    ['digestpath',                                       'pathology'],
+    ['gastric cancer screening',                         'pathology'],
+    ['large-scale retrieval for medical image analytics','pathology'],
+    ['high-throughput histopathological',                'pathology'],
+    ['fusing heterogeneous features from stacked sparse','pathology'],
+    ['fine-grained histopathological image analysis',    'pathology'],
+    ['weighted hashing with multiple cues for cell',     'pathology'],
+    ['image-guided diagnosis of intraductal',            'pathology'],
+    ['large-scale histopathological image analysis',     'pathology'],
+    ['mining histopathological images',                  'pathology'],
+    ['embedding label structures for fine-grained',      'pathology'],
+    // Large Models
+    ['guidegen',                                         'large-models'],
+    ['medlsam',                                          'large-models'],
+    ['synthet2c',                                        'large-models'],
+    ['interactive evaluation for medical llm',           'large-models'],
+    ['medodyssey',                                       'large-models'],
+    ['biomedical terminology normalization',             'large-models'],
+    ['pan-tumor foundation',                             'large-models'],
+    ['mask-attribute alignment',                         'large-models'],
+    ['lesiondiffusion',                                  'large-models'],
+    ['dentistry: vision foundation',                     'large-models'],
+    ['usfm',                                             'large-models'],
+    ['medbench',                                         'large-models'],
+    ['zept',                                             'large-models'],
+    ['cat: coordinating anatomical',                     'large-models'],
+    ['deblurring masked image modeling',                 'large-models'],
+    ['openmedlab',                                       'large-models'],
+    ['meddiff-fm',                                       'large-models'],
+    // Medical Agents
+    ['ehrworld',                                         'medical-agents'],
+    ['medmcp',                                           'medical-agents'],
+    ['mix-of-granularity',                               'medical-agents'],
+    ['o1 replication journey',                           'medical-agents'],
+    ['menti:',                                           'medical-agents'],
+    ['meta-tool',                                        'medical-agents'],
+    ['diagnosisarena',                                   'medical-agents'],
+    ['elicit and enhance',                               'medical-agents'],
+    ['enhancing medication consultation',                'medical-agents'],
+    // Applications
+    ['surgical action planning',                         'applications'],
+    ['maxillofacial',                                    'applications'],
+    ['mmxu',                                             'applications'],
+    ['interactive segmentation and report generation',   'applications'],
+    ['iossam',                                           'applications'],
+    ['kiut',                                             'applications'],
+    ['one-shot weakly-supervised segmentation',          'applications'],
+    ['hippocampus segmentation',                         'applications'],
+    ['pulmonary airway',                                 'applications'],
+    ['efficient subclass segmentation',                  'applications'],
+    ['lobe segmentation',                                'applications'],
+    ['word: a large scale dataset',                      'large-models'],
+    ['contrastive semi-supervised learning for domain',  'applications'],
+    ['segmentation only uses sparse annotations',        'applications'],
+    ['scalable mammogram retrieval',                     'applications'],
+    ['incorporating clinical guidelines',                'applications'],
+    ['biomedical terminology normalization',             'applications'],
+  ];
+
+  const PROJECT_LABEL = {
+    'pathology':      ['Pathology',     'badge-pathology'],
+    'large-models':   ['Large Models',  'badge-large-models'],
+    'medical-agents': ['Agents',        'badge-agents'],
+    'applications':   ['Applications',  'badge-applications'],
+  };
+
+  function projectTag(title) {
+    const t = (title || '').toLowerCase();
+    for (const [pat, proj] of PROJECT_MAP) {
+      if (t.includes(pat)) {
+        const [label, cls] = PROJECT_LABEL[proj];
+        return `<span class="badge ${cls} badge-project">${label}</span>`;
+      }
+    }
+    return '';
+  }
+
   // Badge colour by venue
   function badgeClass(v) {
     if (!v) return 'badge-mint';
@@ -104,6 +189,7 @@
           <div class="pub-card">
             <div class="pub-meta">
               ${venue ? `<span class="badge ${badgeClass(venue)}">${venue}</span>` : ''}
+              ${projectTag(p.title)}
             </div>
             <p class="pub-title">${titleHtml}</p>
             <p class="pub-authors">${formatAuthors(p.authors)}</p>
