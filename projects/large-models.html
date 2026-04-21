@@ -40,41 +40,156 @@
   </h2>
 
   <p class="project-overview">
-    We build and adapt visual foundation models, large language models, and
-    vision-language models for clinical tasks — covering pretraining strategies,
-    instruction tuning, RLHF, and evaluation on medical benchmarks.
+    Large-scale pretrained models are reshaping medical AI — replacing task-specific pipelines
+    with unified representations that generalize across organs, modalities, and clinical tasks.
+    We build and adapt visual foundation models, large language models, and vision-language models
+    for medicine, covering pretraining strategies, efficient finetuning, and rigorous clinical evaluation.
   </p>
 
-  <!-- ── Paper entries ── -->
+  <!-- Overview figure -->
+  <div class="project-overview-fig">
+    <img src="../img/projects/large-models/overview.jpg" alt="Large models project overview"
+         onerror="this.parentElement.style.display='none'">
+  </div>
+
+  <!-- ── Visual Foundation Models ───────────────────────── -->
+  <p class="paper-group-heading">Visual Foundation Models</p>
 
   <div class="paper-entry">
-    <img src="../img/projects/large-models/paper1.png" alt="" class="paper-figure"
+    <img src="../img/projects/large-models/medlsam.jpg" alt="" class="paper-figure"
          onerror="this.style.display='none'">
     <div class="paper-content">
       <p class="paper-entry-title">
-        <a href="https://github.com/openmedlab/PULSE" target="_blank" rel="noopener">PULSE: A Chinese Medical Large Language Model</a>
+        <a href="https://www.sciencedirect.com/science/article/pii/S1361841524002950" target="_blank" rel="noopener">
+          MedLSAM: Localize and Segment Anything Model for 3D CT Images
+        </a>
       </p>
-      <p class="paper-entry-authors">Authors · <em>Venue Year</em></p>
+      <p class="paper-entry-authors"><em>Medical Image Analysis, 2024</em></p>
       <p class="paper-entry-desc">
-        A 20B-parameter Chinese medical LLM with fine-tuning, quantization, and
-        comprehensive evaluation across clinical NLP tasks.
+        Extends the Segment Anything Model to 3D medical imaging by introducing a localization
+        prior that guides mask generation in volumetric CT scans, achieving strong
+        zero-shot segmentation across diverse anatomical structures.
       </p>
     </div>
   </div>
 
   <div class="paper-entry">
-    <img src="../img/projects/large-models/paper2.png" alt="" class="paper-figure"
+    <img src="../img/projects/large-models/pantumor.jpg" alt="" class="paper-figure"
          onerror="this.style.display='none'">
     <div class="paper-content">
       <p class="paper-entry-title">
-        <a href="#" target="_blank" rel="noopener">Paper Title Placeholder</a>
+        <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250206171L/abstract" target="_blank" rel="noopener">
+          A Data-efficient Pan-tumor Foundation Model for Oncology CT Interpretation
+        </a>
       </p>
-      <p class="paper-entry-authors">Authors · <em>Venue Year</em></p>
+      <p class="paper-entry-authors"><em>arXiv, 2025</em></p>
       <p class="paper-entry-desc">
-        Brief description of the contribution and key results.
+        A foundation model for oncology CT that achieves broad tumor coverage with
+        significantly reduced annotation requirements, enabling scalable pretraining
+        across heterogeneous cancer types and imaging protocols.
       </p>
     </div>
   </div>
+
+  <div class="paper-entry">
+    <img src="../img/projects/large-models/dentistry.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://arxiv.org/abs/2510.14532" target="_blank" rel="noopener">
+          Towards Generalist Intelligence in Dentistry: Vision Foundation Models for Oral and Maxillofacial Radiology
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>arXiv, 2025</em></p>
+      <p class="paper-entry-desc">
+        A generalist vision foundation model for dental and maxillofacial radiology,
+        pretrained on large-scale oral imaging data and evaluated across detection,
+        segmentation, and diagnostic classification tasks.
+      </p>
+    </div>
+  </div>
+
+  <div class="paper-entry">
+    <img src="../img/projects/large-models/meddiff.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://arxiv.org/abs/2410.15432" target="_blank" rel="noopener">
+          MedDiff-FM: A Diffusion-based Foundation Model for Versatile Medical Image Applications
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>arXiv, 2024</em></p>
+      <p class="paper-entry-desc">
+        A diffusion-based foundation model that unifies medical image generation, restoration,
+        and segmentation within a single framework, demonstrating strong generalization
+        across modalities including CT, MRI, and X-ray.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── Large Language Models ───────────────────────────── -->
+  <p class="paper-group-heading">Large Language Models</p>
+
+  <div class="paper-entry">
+    <img src="../img/projects/large-models/pulse.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://github.com/openmedlab/PULSE" target="_blank" rel="noopener">
+          PULSE: Pretrained and Unified Language Service Engine
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>Open-source · <a href="https://github.com/openmedlab/PULSE" target="_blank" rel="noopener">github.com/openmedlab/PULSE</a> · since 2023</em></p>
+      <p class="paper-entry-desc">
+        A Chinese medical large language model open-sourced in 2023 and continuously developed since.
+        PULSE covers a wide range of clinical NLP tasks including diagnosis, drug information,
+        medical Q&amp;A, and report generation, with ongoing expansion of training data and capabilities.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── Vision-Language Models ─────────────────────────── -->
+  <p class="paper-group-heading">Vision-Language Models</p>
+
+  <div class="paper-entry">
+    <img src="../img/projects/large-models/cat.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/06a52a54c8ee03cd86771136bc91eb1f-Abstract-Conference.html" target="_blank" rel="noopener">
+          CAT: Coordinating Anatomical-Textual Prompts for Multi-organ and Tumor Segmentation
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>NeurIPS, 2024</em></p>
+      <p class="paper-entry-desc">
+        A vision-language segmentation model that coordinates anatomical and textual prompts
+        to achieve unified multi-organ and tumor segmentation, enabling open-vocabulary
+        queries over 3D medical volumes.
+      </p>
+    </div>
+  </div>
+
+  <div class="paper-entry">
+    <img src="../img/projects/large-models/mask-attr.jpg" alt="" class="paper-figure"
+         onerror="this.style.display='none'">
+    <div class="paper-content">
+      <p class="paper-entry-title">
+        <a href="https://arxiv.org/abs/2410.15744" target="_blank" rel="noopener">
+          Unleashing the Potential of Vision-Language Pre-Training for 3D Zero-Shot Lesion Segmentation via Mask-Attribute Alignment
+        </a>
+      </p>
+      <p class="paper-entry-authors"><em>ICLR, 2025</em></p>
+      <p class="paper-entry-desc">
+        Leverages vision-language pretraining to enable zero-shot lesion segmentation in 3D
+        medical images through mask-attribute alignment, bridging the gap between
+        language descriptions and volumetric spatial understanding.
+      </p>
+    </div>
+  </div>
+
+  <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem; font-style:italic;">
+    Vision-language models for medical imaging are a current research focus of our lab — more work coming soon.
+  </p>
 
 </main>
 
