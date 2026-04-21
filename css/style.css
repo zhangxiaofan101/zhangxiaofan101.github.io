@@ -107,7 +107,7 @@ a:hover { text-decoration: underline; }
   font-family: 'Nunito', sans-serif;
   font-size: 0.58rem;
   font-weight: 400;
-  color: var(--text-muted);
+  color: #a8c8b8;
   font-style: italic;
   white-space: nowrap;
   line-height: 1.3;
