@@ -87,7 +87,7 @@ a:hover { text-decoration: underline; }
   color: var(--text);
   text-decoration: none;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.4rem;
 }
 .nav-brand:hover { text-decoration: none; }
@@ -95,6 +95,7 @@ a:hover { text-decoration: underline; }
   display: flex;
   flex-direction: column;
   gap: 0;
+  padding-top: 3px;
 }
 .nav-brand-name {
   font-family: 'Caveat', cursive;
