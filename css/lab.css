@@ -154,6 +154,24 @@ a { color: inherit; }
   letter-spacing: 0;
 }
 
+.hello-note {
+  margin: 1.4rem auto 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+.hello-note a {
+  margin: 0 0.15em;
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(114, 255, 182, 0.65);
+}
+
+.hello-note a:hover {
+  border-bottom-style: solid;
+}
+
 .poster-wall {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
