@@ -6,6 +6,10 @@
 
 const NEWS = [
   {
+    date: "Jul 2026",
+    html: `<strong>PathFound</strong> accepted at <strong>Medical Image Analysis</strong>!`
+  },
+  {
     date: "Apr 2026",
     html: `2 papers accepted at <strong>ACL 2026</strong>: medical calculators and a diagnostic reasoning benchmark.`
   },
